@@ -56,6 +56,7 @@ kill_wallpaper_for_image() {
   pkill mpvpaper 2>/dev/null
   pkill swaybg 2>/dev/null
   pkill hyprpaper 2>/dev/null
+  pkill swaync 2>/dev/null
 }
 
 # Retrieve wallpapers (both images & videos)
@@ -171,7 +172,7 @@ apply_image_wallpaper() {
   swww img -o "$focused_monitor" "$image_path" $SWWW_PARAMS
 
   wal -i "$image_path"
-
+  swaync
   # Run additional scripts
   "$SCRIPTSDIR/WallustSwww.sh"
   sleep 2
