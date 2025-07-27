@@ -110,6 +110,7 @@ alias nvimdir='nvim -c "cd $(find . -type d | fzf --preview '\''bat --style=plai
 alias termusic='termusic -c'
 alias search-package="dnf list --installed | grep -i"
 alias ff='fastfetch'
+alias cf='cpufetch'
 alias v='nvim'
 # alias removeKVMIntel ="sudo modprobe -r kvm_intel"
 # alias removeKVM="sudo modprobe -r kvm"
