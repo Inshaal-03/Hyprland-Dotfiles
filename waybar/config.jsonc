@@ -4,7 +4,7 @@
 //                                 YP  YP    dP""""Yb   dP     88oodP  dP""""Yb  88  Yb 
 {
   "include": [
-    "/home/inshaal-navid-malik/dotfiles/waybar/ModulesWorkspaces.txt"
+    "~/dotfiles/waybar/ModulesWorkspaces.txt"
   ],
   "height": 24,
   "margin-top": 5,
