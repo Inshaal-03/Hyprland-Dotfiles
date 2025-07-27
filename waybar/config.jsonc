@@ -140,18 +140,17 @@
     "orientation": "inherit",
     "modules": [
       "cpu",
-      "cpu#frequency",
       "temperature",
       "memory",
       "disk"
     ]
   },
   "cpu": {
-    "format": "󰍛 {usage}%",
+    "format": "󰍛 {icon0}{icon1}{icon2}{icon3} {usage:>2}%",
     "interval": 1,
     "min-length": 5,
     "format-alt-click": "click",
-    "format-alt": "{icon0}{icon1}{icon2}{icon3} {usage:>2}% 󰍛",
+    "format-alt": "󰾆 {max_frequency} GHz",
     "format-icons": [
       "▁",
       "▂",
@@ -162,11 +161,6 @@
       "▇",
       "█"
     ]
-  },
-  "cpu#frequency": {
-    "format": "󰾆 {max_frequency} GHz",
-    "interval": 1,
-    "min-length": 5
   },
   "disk": {
     "interval": 30,
