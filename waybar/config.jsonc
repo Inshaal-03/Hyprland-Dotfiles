@@ -30,8 +30,9 @@
   "hyprland/window": {
     "max-length": 30,
     "rewrite": {
-      "": "<span foreground='#458588'></span> Hyprland",
+      "": "<span foreground='#458588'></span> Desktop",
       "kitty": " Terminal",
+      "inshaal-navid-malik@fedora:~": " Terminal",
       "~": "  Terminal",
       "zsh": "  Terminal",
       "tmux(.*)": "<span foreground='#a6e3a1'> </span> Tmux",
@@ -40,7 +41,9 @@
       "(.*) — Zen Twilight": "<span foreground='#537CF7'>󰺕 </span> $1",
       "(.*)Zen Twilight": "<span foreground='#537CF7'>󰺕 </span> Zen Twilight",
       "nvim": "<span foreground='#98971a'> </span> Neovim",
+      "v": "<span foreground='#98971a'> </span> Neovim",
       "nvim (.*)": "<span foreground='#98971a'> </span> $1",
+      "v (.*)": "<span foreground='#98971a'> </span> $1",
       "Gabut Download Manager": " Gabut Download Manager",
       "ONLYOFFICE Desktop Editors": "<span foreground='#cc241d'> </span> OnlyOffice Desktop"
     }
