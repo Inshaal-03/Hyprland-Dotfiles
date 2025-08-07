@@ -49,9 +49,9 @@ tooltip label {
 #workspaces {
   /* border: 3px solid @color0; */
   background-color: @color0;
-  border-radius: 15px 15px 15px 15px;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  border-radius: 10px 10px 10px 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   padding-right: 4px;
 }
 
@@ -62,14 +62,14 @@ tooltip label {
 #workspaces button.active {
   color: black;
   background-color: @color3;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 10px 10px 10px 10px;
 }
 
 #workspaces button:hover {
   color: black;
   /* border: 3px solid white; */
   background-color: @color15;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 10px 10px 10px 10px;
 }
 
 /* Window Section */
@@ -77,7 +77,7 @@ tooltip label {
   color: @color13;
   /* border: 3px solid white; */
   background-color: @color0;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 10px 10px 10px 10px;
   padding-top: 2px;
   padding-bottom: 2px;
   padding-right: 8px;
@@ -88,7 +88,7 @@ window#waybar.empty #window {
   color: @color4;
   /* border: 3px solid white; */
   background-color: @color0;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 10px 10px 10px 10px;
   padding-top: 2px;
   padding-bottom: 2px;
   padding-right: 10px;
@@ -102,10 +102,10 @@ window#waybar.empty #window {
 #temperature,
 #tray,
 #battery {
-  color: @color8;
+  color: @color4;
   background-color: @color0;
   /* border: 3px solid @color0; */
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 10px 10px 10px 10px;
   margin-right: 60px;
   padding-top: 2px;
   padding-bottom: 2px;
@@ -116,11 +116,10 @@ window#waybar.empty #window {
 #clock,
 #custom-notification,
 #pulseaudio {
-  color: @color4;
+  color: @color13;
   background-color: @color0;
   /* border: 3px solid @color0; */
-  border-radius: 15px 15px 15px 15px;
-  margin-right: 60px;
+  border-radius: 10px 10px 10px 10px;
   padding-top: 2px;
   padding-bottom: 2px;
   padding-left: 15px;
