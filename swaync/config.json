@@ -2,23 +2,24 @@
   "$schema": "/etc/xdg/swaync/configSchema.json",
   "positionX": "right",
   "positionY": "top",
-  "cssPriority": "user",
+	"cssPriority": "user",
 
   "control-center-width": 380,
-  "control-center-height": 1060,
+  "control-center-height": 860, 
   "control-center-margin-top": 2,
   "control-center-margin-bottom": 2,
   "control-center-margin-right": 1,
   "control-center-margin-left": 0,
 
   "notification-window-width": 400,
+  "notification-icon-size": 48,
   "notification-body-image-height": 160,
   "notification-body-image-width": 200,
 
   "timeout": 4,
   "timeout-low": 2,
   "timeout-critical": 6,
-
+  
   "fit-to-screen": false,
   "keyboard-shortcuts": true,
   "image-visibility": "when-available",
@@ -39,7 +40,14 @@
       "app-name": "Spotify"
     }
   },
-  "widgets": ["buttons-grid", "mpris", "title", "dnd", "notifications"],
+  "widgets": [
+    "label",
+    "buttons-grid",
+    "mpris",
+    "title",
+    "dnd",
+    "notifications"
+  ],
   "widget-config": {
     "title": {
       "text": "Notifications",
@@ -49,17 +57,22 @@
     "dnd": {
       "text": "Do not disturb"
     },
+    "label": {
+      "max-lines": 1,
+      "text": " "
+    },
     "mpris": {
-      "show-album-art": "always"
+      "image-size": 96,
+      "image-radius": 12
     },
     "volume": {
       "label": "󰕾",
-      "show-per-app": true
+        "show-per-app": true
     },
     "buttons-grid": {
       "actions": [
         {
-          "label": "",
+          "label": " ",
           "command": "amixer set Master toggle"
         },
         {
@@ -67,7 +80,7 @@
           "command": "amixer set Capture toggle"
         },
         {
-          "label": "",
+          "label": " ",
           "command": "nm-connection-editor"
         },
         {
@@ -78,6 +91,7 @@
           "label": "󰏘",
           "command": "nwg-look"
         }
+        
       ]
     }
   }

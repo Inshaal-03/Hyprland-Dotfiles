@@ -134,11 +134,6 @@
     // "on-scroll-down": "wpctl set-volume @DEFAULT_SINK@ 10%-",
     "on-click": "pavucontrol"
   },
-  "custom/power": {
-    "format": "⏻ ",
-    "tooltip": false,
-    "on-click": "/home/inshaal-navid-malik/.config/hypr/Scripts/Powermenu.sh"
-  },
   "group/mobo_drawer": {
     "orientation": "inherit",
     "modules": [

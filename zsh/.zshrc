@@ -116,10 +116,9 @@ alias v='nvim'
 # alias removeKVM="sudo modprobe -r kvm"
 alias volume='pavucontrol'
 alias update='sudo dnf update -y'
-export PATH="/home/inshaal-navid-malik/.cargo/bin:$PATH"
-export PATH="/home/inshaal-navid-malik/.local/bin:$PATH"
-export PATH="/home/inshaal-navid-malik/.local/share/cargo/bin/:$PATH"
-# eval "$(oh-my-posh init zsh --config /home/inshaal-navid-malik/Oh-My-Posh-Themes/half-life.omp.json)"
+export PATH="~/.cargo/bin:$PATH"
+export PATH="~/.local/bin:$PATH"
+export PATH="~/.local/share/cargo/bin/:$PATH"
 eval "$(zoxide init zsh)"
 bindkey -v
 EDITOR=nvim
