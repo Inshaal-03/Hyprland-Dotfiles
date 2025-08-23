@@ -1,0 +1,15 @@
+[SddmGreeterTheme]
+Name=Neontown
+Description=Neon Town SDDM for Plasma 6
+Author=lma0
+License=GPLv3
+Type=sddm-theme
+Version=1.0
+Website=https://www.pling.com/p/2224794/
+Screenshot=preview.png
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Theme-Id=neontown
+Theme-API=2.0
+QtVersion=6

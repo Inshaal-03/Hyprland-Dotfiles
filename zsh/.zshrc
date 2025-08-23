@@ -107,7 +107,6 @@ alias ls="eza --icons"
 alias tree="eza --icons --tree"
 alias icat="kitten icat"
 alias nvimdir='nvim -c "cd $(find . -type d | fzf --preview '\''bat --style=plain --color=always {}|| ls -1 {}'\'' )" -c '
-alias termusic='termusic -c'
 alias search-package="dnf list --installed | grep -i"
 alias ff='fastfetch'
 alias cf='cpufetch'
@@ -116,9 +115,9 @@ alias v='nvim'
 # alias removeKVM="sudo modprobe -r kvm"
 alias volume='pavucontrol'
 alias update='sudo dnf update -y'
-export PATH="~/.cargo/bin:$PATH"
-export PATH="~/.local/bin:$PATH"
-export PATH="~/.local/share/cargo/bin/:$PATH"
+export PATH=$HOME/.cargo/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.local/share/cargo/bin/:$PATH
 eval "$(zoxide init zsh)"
 bindkey -v
 EDITOR=nvim
