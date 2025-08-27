@@ -102,7 +102,7 @@ window#waybar.empty #window {
 #temperature,
 #tray,
 #battery {
-  color: @color4;
+  color: @color6;
   background-color: @color0;
   /* border: 3px solid @color0; */
   border-radius: 10px 10px 10px 10px;
