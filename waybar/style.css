@@ -50,9 +50,9 @@ tooltip label {
   /* border: 3px solid @color0; */
   background-color: @color0;
   border-radius: 10px 10px 10px 10px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-right: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 2px;
 }
 
 #workspaces button {
@@ -91,8 +91,8 @@ window#waybar.empty #window {
   border-radius: 10px 10px 10px 10px;
   padding-top: 2px;
   padding-bottom: 2px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 8px;
+  padding-left: 8px;
 }
 
 /* Cpu, Memory, Disk, Temperature Section */

@@ -71,6 +71,42 @@
       "",
       ""
     ],
+    "battery": {
+      "format": "{icon}  {capacity}%",
+      "format-icons": {
+        "charging": [
+          "󰢜",
+          "󰂆",
+          "󰂇",
+          "󰂈",
+          "󰢝",
+          "󰂉",
+          "󰢞",
+          "󰂊",
+          "󰂋",
+          "󰂅"
+        ],
+        "default": [
+          "󰁺",
+          "󰁻",
+          "󰁼",
+          "󰁽",
+          "󰁾",
+          "󰁿",
+          "󰂀",
+          "󰂁",
+          "󰂂",
+          "󰁹"
+        ]
+      },
+      "format-full": "Charged ",
+      "interval": 5,
+      "states": {
+        "warning": 20,
+        "critical": 10
+      },
+      "tooltip": true
+    },
     "format-time": "{H}h {M}min",
     "tooltip": true,
     "tooltip-format": "{timeTo}"

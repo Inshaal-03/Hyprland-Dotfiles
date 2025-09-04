@@ -119,5 +119,6 @@ export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.local/share/cargo/bin/:$PATH
 eval "$(zoxide init zsh)"
+eval "$(oh-my-posh init zsh --config ~/.cache/oh-my-posh/themes/lambdageneration.omp.json)"
 bindkey -v
 EDITOR=nvim
