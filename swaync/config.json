@@ -12,9 +12,8 @@
   "control-center-margin-left": 0,
   "notification-2fa-action": true,
   "notification-inline-replies": false,
-  "notification-icon-size": 24,
   "notification-body-image-height": 100,
-  "notification-body-image-width": 100,
+  "notification-body-image-width": 200,
   "notification-window-width": 300,
   "timeout": 6,
   "timeout-low": 3,
@@ -49,12 +48,9 @@
       "max-lines": 1,
       "text": "Notification"
     },
-    "mpris": {
-      "image-size": 10,
-      "image-radius": 0
-    },
     "volume": {
-      "label": "󰕾"
+      "label": "󰕾",
+      "show-per-app": true
     },
     "backlight": {
       "label": "󰃟"
@@ -63,11 +59,11 @@
       "actions": [
         {
           "label": "󰐥",
-          "command": "bash -c $HOME/.config/hypr/scripts/Wlogout.sh"
+          "command": "systemctl poweroff"
         },
         {
           "label": "󰌾",
-          "command": "bash -c $HOME/.config/hypr/scripts/LockScreen.sh"
+          "command": "hyprlock"
         },
         {
           "label": "󰍃",
