@@ -21,7 +21,7 @@
     "group/mobo_drawer"
   ],
   "modules-right": [
-    "tray",
+    "group/network_drawer",
     "pulseaudio",
     "battery",
     "custom/notification",
@@ -58,54 +58,37 @@
       "warning": 30,
       "critical": 15
     },
-    "format": "{capacity}% {icon} ",
-    "format-charging": "{capacity}% ",
+    "format": "{capacity}% {icon}",
+    "format-charging": "{capacity}% {icon}",
     "format-plugged": "{capacity}% 󱘖",
     "format-alt-click": "click",
-    "format-full": "Full {icon} ",
-    "format-alt": "{time} {icon} ",
-    "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      ""
-    ],
-    "battery": {
-      "format": "{icon}  {capacity}%",
-      "format-icons": {
-        "charging": [
-          "󰢜",
-          "󰂆",
-          "󰂇",
-          "󰂈",
-          "󰢝",
-          "󰂉",
-          "󰢞",
-          "󰂊",
-          "󰂋",
-          "󰂅"
-        ],
-        "default": [
-          "󰁺",
-          "󰁻",
-          "󰁼",
-          "󰁽",
-          "󰁾",
-          "󰁿",
-          "󰂀",
-          "󰂁",
-          "󰂂",
-          "󰁹"
-        ]
-      },
-      "format-full": "Charged ",
-      "interval": 5,
-      "states": {
-        "warning": 20,
-        "critical": 10
-      },
-      "tooltip": true
+    "format-full": "{capacity}% {icon}",
+    "format-alt": "{time} {icon}",
+    "format-icons": {
+      "charging": [
+        "󰢜",
+        "󰂆",
+        "󰂇",
+        "󰂈",
+        "󰢝",
+        "󰂉",
+        "󰢞",
+        "󰂊",
+        "󰂋",
+        "󰂅"
+      ],
+      "default": [
+        "󰁺",
+        "󰁻",
+        "󰁼",
+        "󰁽",
+        "󰁾",
+        "󰁿",
+        "󰂀",
+        "󰂁",
+        "󰂂",
+        "󰁹"
+      ]
     },
     "format-time": "{H}h {M}min",
     "tooltip": true,
@@ -132,30 +115,28 @@
     }
   },
   "tray": {
-    "icon-size": 20
+    "icon-size": 20,
+    "spacing": 10
   },
   "network": {
-    // "interface": "wlp2*", // (Optional) To force the use of this interface
     "format-wifi": "{essid} ({signalStrength}%) ",
     "format-ethernet": "{ipaddr}/{cidr} ",
-    "tooltip-format": "{ifname} via {gwaddr} ",
     "format-linked": "{ifname} (No IP) 󰩟",
     "format-disconnected": "Disconnected ⚠",
-    "format-alt": "{ifname}: {ipaddr}/{cidr}",
-    "on-click-right": "kitty nmtui"
+    "on-click-right": "kitty nmtui",
+    "tooltip": false
   },
   "pulseaudio": {
-    // "scroll-step": 1, // %, can be a float
-    "format": "{icon} {volume}%{format_source}",
-    "format-bluetooth": "{icon} {volume}% {format_source}",
-    "format-bluetooth-muted": " {icon} {format_source}",
-    "format-muted": " {format_source}",
+    "format": "{volume}%{format_source} {icon}",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-bluetooth-muted": "{icon} ",
+    "format-muted": "{format_source} ",
     "format-source": "",
     "format-source-muted": "",
     "format-icons": {
       "headphone": "",
       "hands-free": "",
-      "headset": " ",
+      "headset": "",
       "phone": "",
       "portable": "",
       "car": "",
@@ -180,32 +161,22 @@
     ]
   },
   "cpu": {
-    "format": "󰍛 {icon0}{icon1}{icon2}{icon3} {usage:>2}%",
+    "format": "{usage:>2}% 󰍛",
     "interval": 1,
     "min-length": 5,
     "format-alt-click": "click",
-    "format-alt": "󰾆 {max_frequency} GHz",
-    "format-icons": [
-      "▁",
-      "▂",
-      "▃",
-      "▄",
-      "▅",
-      "▆",
-      "▇",
-      "█"
-    ]
+    "format-alt": "{max_frequency} GHz 󰾆"
   },
   "disk": {
     "interval": 30,
-    "path": "/",
-    "format": "󰋊 {percentage_used}%",
+    "path": "/home/inshaal-navid-malik/",
+    "format": "{percentage_used}% 󰋊",
     "tooltip-format": "{used} used out of {total} on {path} ({percentage_used}%)"
   },
   "memory": {
     "interval": 10,
-    "format": "  {used:0.1f}GB | {total:0.1f}GB",
-    "format-alt": "  {percentage}%",
+    "format-alt": "{used:0.1f}GB ",
+    "format": "{percentage}% ",
     "format-alt-click": "click",
     "tooltip": false
   },
@@ -213,8 +184,9 @@
     "thermal-zone": 6,
     "interval": 10,
     "critical-threshold": 80,
-    "format-critical": " {temperatureC}°C",
-    "format": " {temperatureC}°C"
+    "format-critical": "{temperatureC}°C ",
+    "tooltip": false,
+    "format": "{temperatureC}°C "
   },
   "group/network_drawer": {
     "orientation": "inherit",
@@ -227,16 +199,6 @@
       "tray",
       "network"
     ]
-  },
-  "custom/separator#line": {
-    "format": "|",
-    "interval": "once",
-    "tooltip": false
-  },
-  "custom/separator#blank": {
-    "format": "   ",
-    "interval": "once",
-    "tooltip": false
   },
   "custom/notification": {
     "tooltip": true,

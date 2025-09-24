@@ -111,6 +111,7 @@ alias search-package="dnf list --installed | grep -i"
 alias ff='fastfetch'
 alias cf='cpufetch'
 alias v='nvim'
+alias cd='z'
 # alias removeKVMIntel ="sudo modprobe -r kvm_intel"
 # alias removeKVM="sudo modprobe -r kvm"
 alias volume='pavucontrol'

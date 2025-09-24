@@ -115,7 +115,8 @@ window#waybar.empty #window {
 
 #clock,
 #custom-notification,
-#pulseaudio {
+#pulseaudio,
+#network {
   color: @color13;
   background-color: @color0;
   /* border: 3px solid @color0; */
@@ -129,6 +130,10 @@ window#waybar.empty #window {
 #pulseaudio,
 #clock {
   padding-right: 15px;
+}
+
+#network {
+  padding-right: 20px;
 }
 
 #temperature.critical {
