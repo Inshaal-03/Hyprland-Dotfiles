@@ -76,6 +76,7 @@ $reboot)
   run_cmd --reboot
   ;;
 $lock)
+  amixer set Master mute
   hyprlock
   ;;
 $suspend)
