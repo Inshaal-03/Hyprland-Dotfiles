@@ -139,8 +139,8 @@ widget {
   border-radius: 1.159rem;
   -gtk-outline-radius: 1.159rem;
   margin: 0.341rem;
-  background-image: url('../../../Wallpaper-Partition/Dragon-01-0.png');
-  background-size: cover;
+  /* background-image: url('../../../Wallpaper-Partition/Dragon-01-0.png'); */
+  /* background-size: cover; */
   background-position: center;
   border: 0.068rem solid alpha(@color4, 0.5);
 }
