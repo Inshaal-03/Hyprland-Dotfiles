@@ -21,7 +21,7 @@
     "group/mobo_drawer"
   ],
   "modules-right": [
-    "group/network_drawer",
+    "tray",
     "pulseaudio",
     "battery",
     "custom/notification",
