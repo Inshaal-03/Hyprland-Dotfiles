@@ -71,7 +71,7 @@ ZSH_THEME="arrow"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions zsh-bat)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions zsh-bat docker)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -116,6 +116,7 @@ alias cd='z'
 # alias removeKVM="sudo modprobe -r kvm"
 alias volume='pavucontrol'
 alias update='sudo dnf update -y'
+alias cls='clear'
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.local/share/cargo/bin/:$PATH
