@@ -71,7 +71,7 @@ ZSH_THEME="arrow"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions zsh-bat docker)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions zsh-bat docker fzf fzf-tab)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -122,5 +122,4 @@ export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.local/share/cargo/bin/:$PATH
 eval "$(zoxide init zsh)"
 eval "$(oh-my-posh init zsh --config ~/.cache/oh-my-posh/themes/agnosterplus.omp.json)"
-bindkey -v
 EDITOR=nvim
