@@ -120,6 +120,7 @@ alias cls='clear'
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.local/share/cargo/bin/:$PATH
+export PATH=$PATH:/usr/local/go/bin
 eval "$(zoxide init zsh)"
 eval "$(oh-my-posh init zsh --config ~/.cache/oh-my-posh/themes/agnosterplus.omp.json)"
 EDITOR=nvim
