@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="arrow"
+ZSH_THEME="agnoster"
 
 
 # Set list of themes to pick from when loading at random
@@ -122,5 +122,4 @@ export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.local/share/cargo/bin/:$PATH
 export PATH=$PATH:/usr/local/go/bin
 eval "$(zoxide init zsh)"
-eval "$(oh-my-posh init zsh --config ~/.cache/oh-my-posh/themes/agnosterplus.omp.json)"
 EDITOR=nvim
