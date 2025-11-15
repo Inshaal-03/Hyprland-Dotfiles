@@ -3,7 +3,7 @@
 * {
   font-family: "FiraCode Nerd Font", "JetBrainsMono Nerd Font Propo Regular";
   font-weight: bold;
-  font-size: 16px;
+  font-size: 97%;
   font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
 }
 
@@ -74,9 +74,9 @@ tooltip label {
 
 /* Window Section */
 #window {
-  color: @color3;
+  color: @color0;
   /* border: 3px solid white; */
-  background-color: @color0;
+  background-color: @color3;
   border-radius: 10px 10px 10px 10px;
   padding-top: 2px;
   padding-bottom: 2px;
@@ -85,9 +85,9 @@ tooltip label {
 }
 
 window#waybar.empty #window {
-  color: @color4;
+  color: @color0;
   /* border: 3px solid white; */
-  background-color: @color0;
+  background-color: @color3;
   border-radius: 10px 10px 10px 10px;
   padding-top: 2px;
   padding-bottom: 2px;

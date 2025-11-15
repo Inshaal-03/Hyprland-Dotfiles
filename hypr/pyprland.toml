@@ -48,3 +48,23 @@ size = "60% 60%"
 position = "21% 20%"
 margin = 50
 preserve_aspect = true
+
+
+[scratchpads.nmtui]
+animation = "fromTop"
+command = "kitty --class nmtui nmtui"
+class = "nmtui"
+size = "60% 60%"
+position = "21% 20%"
+margin = 50
+preserve_aspect = true
+
+
+[scratchpads.bluetui]
+animation = "fromTop"
+command = "kitty --class bluetui bluetui"
+class = "bluetui"
+size = "60% 60%"
+position = "21% 20%"
+margin = 50
+preserve_aspect = true

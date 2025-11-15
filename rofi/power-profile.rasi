@@ -5,7 +5,7 @@ configuration {
 
 /*****----- Global Properties -----*****/
 * {
-    font: "JetBrainsMono Nerd Font Propo 12";
+    font: "JetBrainsMono Nerd Font Propo 11";
 }
 /*****----- Main Window -----*****/
 window {
@@ -14,7 +14,7 @@ window {
     location:                    center;
     anchor:                      center;
     fullscreen:                  false;
-    width:                       400px;
+    width:                       500px;
     x-offset:                    0px;
     y-offset:                    0px;
 
