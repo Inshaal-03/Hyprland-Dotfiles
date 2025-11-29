@@ -14,7 +14,7 @@
   "layer": "top",
   "position": "top",
   "modules-left": [
-    "hyprland/workspaces#pacman",
+    "hyprland/workspaces#kanji",
     "hyprland/window"
   ],
   "modules-center": [
@@ -169,7 +169,7 @@
   },
   "disk": {
     "interval": 30,
-    "path": "/home/inshaal-navid-malik/",
+    "path": "/",
     "format": "{percentage_used}% 󰋊",
     "tooltip-format": "{used} used out of {total} on {path} ({percentage_used}%)"
   },
