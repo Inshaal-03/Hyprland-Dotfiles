@@ -5,5 +5,5 @@ WALLPAPER=$(find ~/Wallpaper-Partition -type f \
 
 sww img $WALLPAPER
 wal -i $WALLPAPER
-notify-send "Wallpaper Changed" "Wallpaper and colorscheme has been changed according to the $WALLPAPER Wallpaper."
+notify-send "Wallpaper Changed" "Wallpaper and colorscheme has been changed according to the$WALLPAPER Wallpaper."
 
