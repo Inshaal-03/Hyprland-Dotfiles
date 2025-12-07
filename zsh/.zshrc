@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="lukerandall"
+ZSH_THEME="random"
 
 
 # Set list of themes to pick from when loading at random
@@ -71,7 +71,7 @@ ZSH_THEME="lukerandall"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions zsh-bat docker fzf fzf-tab)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions dnf zsh-bat docker fzf fzf-tab zoxide)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -111,7 +111,6 @@ alias search-package="dnf list --installed | grep -i"
 alias ff='fastfetch'
 alias cf='cpufetch'
 alias v='nvim'
-alias cd='z'
 # alias removeKVMIntel ="sudo modprobe -r kvm_intel"
 # alias removeKVM="sudo modprobe -r kvm"
 alias volume='pavucontrol'
