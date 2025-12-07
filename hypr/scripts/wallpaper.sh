@@ -3,7 +3,13 @@ WALLPAPER=$(find ~/Wallpaper-Partition -type f \
     -regex '.*\.\(png\|jpg\|jpeg\|webp\)' \
     | vicinae dmenu -p 'Pick a Wallpaper')
 
+if [[ -z "$WALLPAPER" ]]; then
+    notify-send "No Wallpaper Selected"
+    exit 1
+fi
+
 sww img $WALLPAPER
 wal -i $WALLPAPER
-notify-send "Wallpaper Changed" "Wallpaper and colorscheme has been changed according to the$WALLPAPER Wallpaper."
+FILENAME=$(basename "$WALLPAPER")
+notify-send "Wallpaper Changed" "Wallpaper and colorscheme has been changed according to the $FILENAME Wallpaper."
 
