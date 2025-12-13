@@ -111,6 +111,7 @@ window#waybar.empty #window {
 
 #clock,
 #custom-notification,
+#custom-headset,
 #pulseaudio,
 #network {
   color: @color13;
@@ -124,6 +125,7 @@ window#waybar.empty #window {
 }
 
 #pulseaudio,
+#custom-headset,
 #clock {
   padding-right: 15px;
 }

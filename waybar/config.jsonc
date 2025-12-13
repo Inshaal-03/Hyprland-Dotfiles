@@ -23,6 +23,8 @@
   "modules-right": [
     "tray",
     "pulseaudio",
+    "custom/headset",
+    "upower",
     "battery",
     "custom/notification",
     "clock"
@@ -220,5 +222,15 @@
     "on-click": "sleep 0.1 && swaync-client -t -sw",
     "on-click-right": "swaync-client -d -sw",
     "escape": true
+  },
+  "custom/headset": {
+    "exec": "/home/inshaal-navid-malik/dotfiles/waybar/bt.sh",
+    "interval": 20,
+    "return-type": "json"
+  },
+  "upower": {
+    "native-path": "/org/freedesktop/UPower/devices/headset_dev_DB_3E_52_DB_29_BC",
+    "icon-size": 20,
+    "hide-if-empty": true
   }
 }
