@@ -6,5 +6,5 @@ BT_STATUS=$(upower -i /org/freedesktop/UPower/devices/headset_dev_DB_3E_52_DB_29
 if [ "$BT_STATUS" = "0%" ]; then
     echo "{}"
 else
-    echo "{\"text\":\"$BT_STATUS 󰋋\",\"tooltip\":\"Connected\"}"
+    echo "{\"text\":\"$BT_STATUS \",\"tooltip\":\"Connected\"}"
 fi
