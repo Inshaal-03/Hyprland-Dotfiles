@@ -9,7 +9,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="nicoulaj"
-ZSH_THEME="random"
+ZSH_THEME="jonathan"
 
 
 # Set list of themes to pick from when loading at random
@@ -90,6 +90,16 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='nvim'
 # fi
 
+finder() {
+    # Run the script and capture the result
+    local result=$($HOME/dotfiles/hypr/scripts/file_finder.sh)
+
+    # Check if the script told us to CD
+    if [[ "$result" == TYPE_DIR:* ]]; then
+        local target_dir="${result#TYPE_DIR:}"
+        cd "$target_dir"
+    fi
+}
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
@@ -104,6 +114,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
 alias ls="eza --icons"
 alias tree="eza --icons --tree"
 alias icat="kitten icat"
@@ -123,4 +134,7 @@ export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.local/share/cargo/bin/:$PATH
 export PATH=$PATH:/usr/local/go/bin
 eval "$(zoxide init zsh)"
+test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
+test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc
 EDITOR=nvim
