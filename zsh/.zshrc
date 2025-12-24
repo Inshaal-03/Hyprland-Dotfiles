@@ -72,7 +72,7 @@ ZSH_THEME="jonathan"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions dnf zsh-bat docker fzf fzf-tab zoxide vi-mode)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions dnf zsh-bat docker fzf fzf-tab zoxide vi-mode kitty)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -123,7 +123,7 @@ alias search-package="dnf list --installed | grep -i"
 alias ff='fastfetch'
 alias cf='cpufetch'
 alias v='nvim'
-alias find-file='fzf --preview="bat --color=always {}" | wl-copy'
+alias find-file='~/dotfiles/hypr/scripts/file_finder.sh'
 # alias removeKVMIntel ="sudo modprobe -r kvm_intel"
 # alias removeKVM="sudo modprobe -r kvm"
 alias volume='pavucontrol'
