@@ -93,13 +93,20 @@ source $ZSH/oh-my-zsh.sh
 finder() {
     # Run the script and capture the result
     local result=$($HOME/dotfiles/hypr/scripts/file_finder.sh)
-
+    echo "$result"
     # Check if the script told us to CD
     if [[ "$result" == TYPE_DIR:* ]]; then
         local target_dir="${result#TYPE_DIR:}"
+	echo "$target_dir"
         cd "$target_dir"
     fi
+    if [[ "$result" == TYPE_FILE:* ]]; then
+	local target_file="${result#TYPE_FILE:}"
+	echo "$target_file"
+	nvim "$target_file"
+    fi
 }
+
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 

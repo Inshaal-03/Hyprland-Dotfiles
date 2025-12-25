@@ -2,7 +2,6 @@
 
 * {
   font-family: "FiraCode Nerd Font", "JetBrainsMono Nerd Font Propo Regular";
-  font-weight: bold;
   font-size: 97%;
   font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
 }
@@ -50,8 +49,8 @@ tooltip label {
   /* border: 3px solid @color0; */
   background-color: @color0;
   border-radius: 10px 10px 10px 10px;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-right: 2px;
 }
 
@@ -125,11 +124,13 @@ window#waybar.empty #window {
 }
 
 #pulseaudio,
-#custom-headset,
 #clock {
   padding-right: 15px;
 }
 
+#custom-headset{
+  padding-right: 17px;
+}
 #network {
   padding-right: 20px;
 }

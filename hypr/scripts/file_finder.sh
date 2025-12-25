@@ -29,7 +29,9 @@ PATH_VAL=$(echo "$SELECTED_RAW" | cut -d' ' -f2-)
 
 if [ "$TYPE_ICON" == "" ]; then
     echo "TYPE_DIR:$PATH_VAL"
-else
+fi
+
+if [ "$TYPE_ICON" == "󰈚" ]; then
     echo "TYPE_FILE:$PATH_VAL"
     ${EDITOR:-nvim} "$PATH_VAL"
 fi
