@@ -15,12 +15,14 @@
   "position": "top",
   "modules-left": [
     "hyprland/workspaces#kanji",
-    "hyprland/window"
+    // "hyprland/window",
+    "custom/media"
   ],
   "modules-center": [
     "group/mobo_drawer"
   ],
   "modules-right": [
+    "custom/weather",
     "tray",
     "pulseaudio",
     "custom/headset",
@@ -232,5 +234,23 @@
     "native-path": "/org/freedesktop/UPower/devices/headset_dev_DB_3E_52_DB_29_BC",
     "icon-size": 20,
     "hide-if-empty": true
+  },
+  "custom/weather": {
+    "exec": "/home/inshaal-navid-malik/dotfiles/waybar/weather.sh Karachi+Pakistan",
+    "return-type": "json",
+    "format": "{}",
+    "tooltip": true,
+    "interval": 3600
+  },
+  "custom/media": {
+    "format": "{icon}{text}",
+    "return-type": "json",
+    "format-icons": {
+        "Playing": " ",
+        "Paused": " ",
+    },
+    "max-length":30,
+    "exec": "playerctl -a metadata --format '{\"text\": \"{{playerName}}: {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+    "on-click": "playerctl play-pause"
   }
 }
