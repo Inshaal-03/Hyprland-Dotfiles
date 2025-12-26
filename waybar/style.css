@@ -50,9 +50,10 @@ tooltip label {
   /* border: 3px solid @color0; */
   background-color: @color0;
   border-radius: 10px 10px 10px 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 2px;
+  padding-top: 2px;
+  padding-bottom: 8px;
+  padding-right: 8px;
+  padding-bottom: 2px;
 }
 
 #workspaces button {
@@ -125,13 +126,13 @@ window#waybar.empty #window {
   padding-right: 10px;
 }
 
-#pulseaudio,
 #clock,
 #custom-weather {
   padding-right: 15px;
 }
 
-#custom-headset{
+#custom-headset,
+#pulseaudio {
   padding-right: 17px;
 }
 #custom-weather {
