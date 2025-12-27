@@ -74,7 +74,7 @@ tooltip label {
 }
 
 /* Window Section */
-#window, #custom-media {
+#window {
   color: @color0;
   /* border: 3px solid white; */
   background-color: @color3;
@@ -115,7 +115,8 @@ window#waybar.empty #window {
 #custom-headset,
 #pulseaudio,
 #network,
-#custom-weather{
+#custom-weather,
+#custom-media{
   color: @color13;
   background-color: @color0;
   /* border: 3px solid @color0; */

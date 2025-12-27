@@ -15,7 +15,7 @@
   "position": "top",
   "modules-left": [
     "hyprland/workspaces#kanji",
-    // "hyprland/window",
+    "hyprland/window",
     "custom/media"
   ],
   "modules-center": [
@@ -24,6 +24,7 @@
   "modules-right": [
     "custom/weather",
     "tray",
+    "network",
     "pulseaudio",
     "custom/headset",
     "upower",
@@ -240,7 +241,7 @@
     "return-type": "json",
     "format": "{}",
     "tooltip": true,
-    "interval": 3600
+    "interval": 36000
   },
   "custom/media": {
     "format": "{icon}{text}",
