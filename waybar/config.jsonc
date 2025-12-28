@@ -17,8 +17,8 @@
         "hyprland/workspaces#kanji",
         "custom/seperator",
         "hyprland/window",
-        "custom/seperator"
-        // "custom/media"
+        "custom/seperator",
+        "custom/media"
     ],
     "modules-center": [
         "custom/seperator",
@@ -43,7 +43,7 @@
     "hyprland/window": {
         "max-length": 30,
         "rewrite": {
-            "": "<span foreground='#458588'></span>Desktop",
+            "": "<span foreground='#458588'></span>Desktop"
             // "kitty": " Terminal",
             // "inshaal-navid-malik@fedora:~": " Terminal",
             // "~": "  Terminal",
@@ -253,8 +253,8 @@
             "Playing": " ",
             "Paused": " "
         },
-        "max-length": 30,
-        "exec": "playerctl -a metadata --format '{\"text\": \"{{playerName}}: {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+        "max-length": 60,
+        "exec": "playerctl -a metadata --format '{\"text\": \"{{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
         "on-click": "playerctl play-pause"
     },
     "custom/seperator": {
