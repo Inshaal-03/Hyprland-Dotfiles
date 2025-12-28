@@ -3,255 +3,261 @@
 //                                YbdPYbdP    dP__Yb     8P    88""Yb   dP__Yb   88"Yb  
 //                                 YP  YP    dP""""Yb   dP     88oodP  dP""""Yb  88  Yb 
 {
-  "include": [
-    "~/dotfiles/waybar/ModulesWorkspaces.txt"
-  ],
-  "height": 24,
-  "margin-top": 5,
-  "margin-right": 5,
-  "margin-left": 5,
-  "margin-bottom": 5,
-  "layer": "top",
-  "position": "top",
-  "modules-left": [
-    "hyprland/workspaces#kanji",
-    "hyprland/window",
-    "custom/media"
-  ],
-  "modules-center": [
-    "group/mobo_drawer"
-  ],
-  "modules-right": [
-    "custom/weather",
-    "tray",
-    "network",
-    "pulseaudio",
-    "custom/headset",
-    "upower",
-    "battery",
-    "custom/notification",
-    "clock"
-  ],
-  "hyprland/window": {
-    "max-length": 30,
-    "rewrite": {
-      "": "<span foreground='#458588'></span>Desktop",
-      // "kitty": " Terminal",
-      // "inshaal-navid-malik@fedora:~": " Terminal",
-      // "~": "  Terminal",
-      // "zsh": "  Terminal",
-      // "tmux(.*)": "<span foreground='#a6e3a1'> </span> Tmux",
-      // "(.*) — Zen Browser": "<span foreground='#d65d0e'>󰺕 </span> $1",
-      // "(.*)Zen Browser": "<span foreground='#d65d0e'>󰺕 </span> Zen Browser",
-      // "(.*) — Zen Twilight": "<span foreground='#537CF7'>󰺕 </span> $1",
-      // "(.*)Zen Twilight": "<span foreground='#537CF7'>󰺕 </span> Zen Twilight",
-      // "nvim": "<span foreground='#98971a'> </span> Neovim",
-      // "v": "<span foreground='#98971a'> </span> Neovim",
-      // "nvim (.*)": "<span foreground='#98971a'> </span> $1",
-      // "v (.*)": "<span foreground='#98971a'> </span> $1",
-      // "Gabut Download Manager": " Gabut Download Manager",
-      // "ONLYOFFICE Desktop Editors": "<span foreground='#cc241d'> </span> OnlyOffice Desktop"
+    "include": [
+        "~/dotfiles/waybar/ModulesWorkspaces.txt"
+    ],
+    "height": 24,
+    "margin-top": 0,
+    "margin-right": 0,
+    "margin-left": 0,
+    "margin-bottom": 0,
+    "layer": "top",
+    "position": "top",
+    "modules-left": [
+        "hyprland/workspaces#kanji",
+        "custom/seperator",
+        "hyprland/window",
+        "custom/seperator"
+        // "custom/media"
+    ],
+    "modules-center": [
+        "custom/seperator",
+        "group/mobo_drawer",
+        "custom/seperator"
+    ],
+    "modules-right": [
+        "custom/weather",
+        "custom/seperator",
+        "tray",
+        "network",
+        "custom/seperator",
+        "pulseaudio",
+        "upower",
+        "custom/seperator",
+        "battery",
+        "custom/seperator",
+        "custom/notification",
+        "custom/seperator",
+        "clock"
+    ],
+    "hyprland/window": {
+        "max-length": 30,
+        "rewrite": {
+            "": "<span foreground='#458588'></span>Desktop",
+            // "kitty": " Terminal",
+            // "inshaal-navid-malik@fedora:~": " Terminal",
+            // "~": "  Terminal",
+            // "zsh": "  Terminal",
+            // "tmux(.*)": "<span foreground='#a6e3a1'> </span> Tmux",
+            // "(.*) — Zen Browser": "<span foreground='#d65d0e'>󰺕 </span> $1",
+            // "(.*)Zen Browser": "<span foreground='#d65d0e'>󰺕 </span> Zen Browser",
+            // "(.*) — Zen Twilight": "<span foreground='#537CF7'>󰺕 </span> $1",
+            // "(.*)Zen Twilight": "<span foreground='#537CF7'>󰺕 </span> Zen Twilight",
+            // "nvim": "<span foreground='#98971a'> </span> Neovim",
+            // "v": "<span foreground='#98971a'> </span> Neovim",
+            // "nvim (.*)": "<span foreground='#98971a'> </span> $1",
+            // "v (.*)": "<span foreground='#98971a'> </span> $1",
+            // "Gabut Download Manager": " Gabut Download Manager",
+            // "ONLYOFFICE Desktop Editors": "<span foreground='#cc241d'> </span> OnlyOffice Desktop"
+        }
+    },
+    "battery": {
+        "align": 0,
+        "rotate": 0,
+        "full-at": 100,
+        "design-capacity": false,
+        "states": {
+            "good": 100,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% {icon}",
+        "format-plugged": "{capacity}% 󱘖",
+        "format-alt-click": "click",
+        "format-full": "{capacity}% {icon}",
+        "format-alt": "{time} {icon}",
+        "format-icons": {
+            "charging": [
+                "󰢜",
+                "󰂆",
+                "󰂇",
+                "󰂈",
+                "󰢝",
+                "󰂉",
+                "󰢞",
+                "󰂊",
+                "󰂋",
+                "󰂅"
+            ],
+            "default": [
+                "󰁺",
+                "󰁻",
+                "󰁼",
+                "󰁽",
+                "󰁾",
+                "󰁿",
+                "󰂀",
+                "󰂁",
+                "󰂂",
+                "󰁹"
+            ]
+        },
+        "format-time": "{H}h {M}min",
+        "tooltip": true,
+        "tooltip-format": "{timeTo}"
+    },
+    "clock": {
+        "format": "{:%d | %H:%M}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode": "year",
+            "mode-mon-col": 3,
+            "weeks-pos": "right",
+            "on-scroll": 1,
+            "format": {
+                "months": "<span color='#ffead3'><b>{}</b></span>",
+                "days": "<span color='#ecc6d9'><b>{}</b></span>",
+                "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+                "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions": {
+            "on-click-right": "mode"
+        }
+    },
+    "tray": {
+        "icon-size": 20,
+        "spacing": 10
+    },
+    "network": {
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "format-linked": "{ifname} (No IP) 󰩟",
+        "format-disconnected": "Disconnected ⚠",
+        "on-click-right": "kitty nmtui",
+        "tooltip": false
+    },
+    "pulseaudio": {
+        "format": "{volume}%{format_source} {icon}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-bluetooth-muted": "{icon} ",
+        "format-muted": " ",
+        "format-source": "",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": [
+                " ",
+                " ",
+                " "
+            ]
+        },
+        "max-volume": 200,
+        // "on-scroll-up": "wpctl set-volume @DEFAULT_SINK@ 10%+",
+        // "on-scroll-down": "wpctl set-volume @DEFAULT_SINK@ 10%-",
+        "on-click": "pavucontrol"
+    },
+    "group/mobo_drawer": {
+        "orientation": "inherit",
+        "modules": [
+            "cpu",
+            "temperature",
+            "memory",
+            "disk"
+        ]
+    },
+    "cpu": {
+        "format": "{usage:>2}% 󰍛",
+        "interval": 1,
+        "min-length": 5,
+        "format-alt-click": "click",
+        "format-alt": "{max_frequency} GHz 󰾆"
+    },
+    "disk": {
+        "interval": 30,
+        "path": "/",
+        "format": "{percentage_used}% 󰋊",
+        "tooltip-format": "{used} used out of {total} on {path} ({percentage_used}%)"
+    },
+    "memory": {
+        "interval": 10,
+        "format": "{used:0.1f}GB  ",
+        "format-alt": "{percentage}%  ",
+        "format-alt-click": "click",
+        "tooltip": false
+    },
+    "temperature": {
+        "thermal-zone": 6,
+        "interval": 10,
+        "critical-threshold": 80,
+        "format-critical": "{temperatureC}°C ",
+        "tooltip": false,
+        "format": "{temperatureC}°C "
+    },
+    "group/network_drawer": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 500,
+            "children-class": "cpu",
+            "transition-left-to-right": true
+        },
+        "modules": [
+            "tray",
+            "network"
+        ]
+    },
+    "custom/notification": {
+        "tooltip": true,
+        "tooltip-format": "Left Click: Launch Notification Center\nRight Click: Do not Disturb",
+        "format": "{} {icon} ",
+        "format-icons": {
+            "notification": "<span foreground='red'><sup></sup></span>",
+            "none": "",
+            "dnd-notification": "<span foreground='red'><sup></sup></span>",
+            "dnd-none": "",
+            "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+            "inhibited-none": "",
+            "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+            "dnd-inhibited-none": ""
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "sleep 0.1 && swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    },
+    "upower": {
+        "native-path": "/org/freedesktop/UPower/devices/headset_dev_DB_3E_52_DB_29_BC",
+        "icon-size": 20,
+        "hide-if-empty": true
+    },
+    "custom/weather": {
+        "exec": "/home/inshaal-navid-malik/dotfiles/waybar/weather.sh Karachi+Pakistan",
+        "return-type": "json",
+        "format": "{}",
+        "tooltip": true,
+        "interval": 36000
+    },
+    "custom/media": {
+        "format": "{icon}{text}",
+        "return-type": "json",
+        "format-icons": {
+            "Playing": " ",
+            "Paused": " "
+        },
+        "max-length": 30,
+        "exec": "playerctl -a metadata --format '{\"text\": \"{{playerName}}: {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+        "on-click": "playerctl play-pause"
+    },
+    "custom/seperator": {
+        "format": "|"
     }
-  },
-  "battery": {
-    "align": 0,
-    "rotate": 0,
-    "full-at": 100,
-    "design-capacity": false,
-    "states": {
-      "good": 100,
-      "warning": 30,
-      "critical": 15
-    },
-    "format": "{capacity}% {icon}",
-    "format-charging": "{capacity}% {icon}",
-    "format-plugged": "{capacity}% 󱘖",
-    "format-alt-click": "click",
-    "format-full": "{capacity}% {icon}",
-    "format-alt": "{time} {icon}",
-    "format-icons": {
-      "charging": [
-        "󰢜",
-        "󰂆",
-        "󰂇",
-        "󰂈",
-        "󰢝",
-        "󰂉",
-        "󰢞",
-        "󰂊",
-        "󰂋",
-        "󰂅"
-      ],
-      "default": [
-        "󰁺",
-        "󰁻",
-        "󰁼",
-        "󰁽",
-        "󰁾",
-        "󰁿",
-        "󰂀",
-        "󰂁",
-        "󰂂",
-        "󰁹"
-      ]
-    },
-    "format-time": "{H}h {M}min",
-    "tooltip": true,
-    "tooltip-format": "{timeTo}"
-  },
-  "clock": {
-    "format": "{:%d | %H:%M}",
-    "tooltip-format": "<tt><small>{calendar}</small></tt>",
-    "calendar": {
-      "mode": "year",
-      "mode-mon-col": 3,
-      "weeks-pos": "right",
-      "on-scroll": 1,
-      "format": {
-        "months": "<span color='#ffead3'><b>{}</b></span>",
-        "days": "<span color='#ecc6d9'><b>{}</b></span>",
-        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
-        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
-      }
-    },
-    "actions": {
-      "on-click-right": "mode"
-    }
-  },
-  "tray": {
-    "icon-size": 20,
-    "spacing": 10
-  },
-  "network": {
-    "format-wifi": "{essid} ({signalStrength}%) ",
-    "format-ethernet": "{ipaddr}/{cidr} ",
-    "format-linked": "{ifname} (No IP) 󰩟",
-    "format-disconnected": "Disconnected ⚠",
-    "on-click-right": "kitty nmtui",
-    "tooltip": false
-  },
-  "pulseaudio": {
-    "format": "{volume}%{format_source} {icon}",
-    "format-bluetooth": "{volume}% {icon}",
-    "format-bluetooth-muted": "{icon} ",
-    "format-muted": " ",
-    "format-source": "",
-    "format-source-muted": "",
-    "format-icons": {
-      "headphone": "",
-      "hands-free": "",
-      "headset": "",
-      "phone": "",
-      "portable": "",
-      "car": "",
-      "default": [
-        " ",
-        " ",
-        " "
-      ]
-    },
-    "max-volume": 200,
-    // "on-scroll-up": "wpctl set-volume @DEFAULT_SINK@ 10%+",
-    // "on-scroll-down": "wpctl set-volume @DEFAULT_SINK@ 10%-",
-    "on-click": "pavucontrol"
-  },
-  "group/mobo_drawer": {
-    "orientation": "inherit",
-    "modules": [
-      "cpu",
-      "temperature",
-      "memory",
-      "disk"
-    ]
-  },
-  "cpu": {
-    "format": "{usage:>2}% 󰍛",
-    "interval": 1,
-    "min-length": 5,
-    "format-alt-click": "click",
-    "format-alt": "{max_frequency} GHz 󰾆"
-  },
-  "disk": {
-    "interval": 30,
-    "path": "/",
-    "format": "{percentage_used}% 󰋊",
-    "tooltip-format": "{used} used out of {total} on {path} ({percentage_used}%)"
-  },
-  "memory": {
-    "interval": 10,
-    "format": "{used:0.1f}GB  ",
-    "format-alt": "{percentage}%  ",
-    "format-alt-click": "click",
-    "tooltip": false
-  },
-  "temperature": {
-    "thermal-zone": 6,
-    "interval": 10,
-    "critical-threshold": 80,
-    "format-critical": "{temperatureC}°C ",
-    "tooltip": false,
-    "format": "{temperatureC}°C "
-  },
-  "group/network_drawer": {
-    "orientation": "inherit",
-    "drawer": {
-      "transition-duration": 500,
-      "children-class": "cpu",
-      "transition-left-to-right": true
-    },
-    "modules": [
-      "tray",
-      "network"
-    ]
-  },
-  "custom/notification": {
-    "tooltip": true,
-    "tooltip-format": "Left Click: Launch Notification Center\nRight Click: Do not Disturb",
-    "format": "{} {icon} ",
-    "format-icons": {
-      "notification": "<span foreground='red'><sup></sup></span>",
-      "none": "",
-      "dnd-notification": "<span foreground='red'><sup></sup></span>",
-      "dnd-none": "",
-      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
-      "inhibited-none": "",
-      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
-      "dnd-inhibited-none": ""
-    },
-    "return-type": "json",
-    "exec-if": "which swaync-client",
-    "exec": "swaync-client -swb",
-    "on-click": "sleep 0.1 && swaync-client -t -sw",
-    "on-click-right": "swaync-client -d -sw",
-    "escape": true
-  },
-  "custom/headset": {
-    "exec": "/home/inshaal-navid-malik/dotfiles/waybar/bt.sh",
-    "interval": 20,
-    "return-type": "json"
-  },
-  "upower": {
-    "native-path": "/org/freedesktop/UPower/devices/headset_dev_DB_3E_52_DB_29_BC",
-    "icon-size": 20,
-    "hide-if-empty": true
-  },
-  "custom/weather": {
-    "exec": "/home/inshaal-navid-malik/dotfiles/waybar/weather.sh Karachi+Pakistan",
-    "return-type": "json",
-    "format": "{}",
-    "tooltip": true,
-    "interval": 36000
-  },
-  "custom/media": {
-    "format": "{icon}{text}",
-    "return-type": "json",
-    "format-icons": {
-        "Playing": " ",
-        "Paused": " ",
-    },
-    "max-length":30,
-    "exec": "playerctl -a metadata --format '{\"text\": \"{{playerName}}: {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
-    "on-click": "playerctl play-pause"
-  }
 }

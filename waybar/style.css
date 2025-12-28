@@ -1,5 +1,5 @@
 @import "../../.cache/wal/colors-waybar.css";
-
+/*
 * {
   font-family: "FiraCode Nerd Font", "JetBrainsMono Nerd Font Propo Regular";
   font-size: 97%;
@@ -17,7 +17,6 @@ window#waybar.empty #window {
   margin: 0 4px;
 }
 
-/* Tooltip Section */
 tooltip {
   color: white;
   background: #1e1e2e;
@@ -32,7 +31,6 @@ tooltip label {
   color: #cdd6f4;
 }
 
-/* Battery Section */
 #battery.good {
   color: #1a9848;
 }
@@ -45,9 +43,7 @@ tooltip label {
   color: rgb(221, 0, 0);
 }
 
-/* Workspaces Section */
 #workspaces {
-  /* border: 3px solid @color0; */
   background-color: @color0;
   border-radius: 10px 10px 10px 10px;
   padding-top: 2px;
@@ -68,15 +64,12 @@ tooltip label {
 
 #workspaces button:hover {
   color: black;
-  /* border: 3px solid white; */
   background-color: @color15;
   border-radius: 10px 10px 10px 10px;
 }
 
-/* Window Section */
 #window {
   color: @color0;
-  /* border: 3px solid white; */
   background-color: @color3;
   border-radius: 10px 10px 10px 10px;
   padding-top: 2px;
@@ -87,7 +80,6 @@ tooltip label {
 
 window#waybar.empty #window {
   color: @color0;
-  /* border: 3px solid white; */
   background-color: @color3;
   border-radius: 10px 10px 10px 10px;
   padding-top: 2px;
@@ -96,12 +88,10 @@ window#waybar.empty #window {
   padding-left: 8px;
 }
 
-/* Cpu, Memory, Disk, Temperature Section */
 #tray,
 #battery {
   color: @color6;
   background-color: @color0;
-  /* border: 3px solid @color0; */
   border-radius: 10px 10px 10px 10px;
   margin-right: 60px;
   padding-top: 2px;
@@ -119,7 +109,6 @@ window#waybar.empty #window {
 #custom-media{
   color: @color13;
   background-color: @color0;
-  /* border: 3px solid @color0; */
   border-radius: 10px 10px 10px 10px;
   padding-top: 2px;
   padding-bottom: 2px;
@@ -149,7 +138,6 @@ window#waybar.empty #window {
 
 .modules-center {
   background-color: @color0;
-  /* border: 3px solid @color0; */
   border-radius: 10px 10px 10px 10px;
   background-color: @color0;
 }
@@ -163,4 +151,60 @@ window#waybar.empty #window {
   padding-bottom: 2px;
   padding-right: 15px;
   padding-left: 15px;
+}
+*/
+
+* {
+  font-family:
+    "Cascadia Code", "FiraCode Nerd Font",
+    "JetBrainsMono Nerd Font Propo Regular";
+  font-size: 98%;
+  font-weight: bold;
+  font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+}
+
+window#waybar,
+window#waybar.empty,
+window#waybar.empty {
+  color: @color6;
+  background-color: alpha(@color0, 0.7);
+}
+
+#waybar .module {
+  margin: 0 6px;
+}
+
+#custom-weather {
+  padding-top: 6px;
+}
+
+#battery.good {
+  color: #1a9848;
+}
+
+#battery.warning {
+  color: rgb(194, 194, 0);
+}
+
+#battery.critical {
+  color: rgb(221, 0, 0);
+}
+
+#workspaces button {
+  color: @color3;
+}
+
+#workspaces button.active {
+  color: black;
+  background-color: @color6;
+  border-radius: 10px 10px 10px 10px;
+}
+
+#workspaces button:hover {
+  color: black;
+  background-color: @color15;
+}
+
+#network {
+  padding-right: 8px;
 }
