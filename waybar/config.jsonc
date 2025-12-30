@@ -21,9 +21,7 @@
         "custom/media"
     ],
     "modules-center": [
-        "custom/seperator",
         "group/mobo_drawer",
-        "custom/seperator"
     ],
     "modules-right": [
         "custom/weather",
@@ -41,7 +39,7 @@
         "clock"
     ],
     "hyprland/window": {
-        "max-length": 30,
+        "max-length": 20,
         "rewrite": {
             "": "<span foreground='#458588'></span>Desktop"
             // "kitty": " Terminal",
@@ -108,7 +106,7 @@
         "tooltip-format": "{timeTo}"
     },
     "clock": {
-        "format": "{:%d | %H:%M}",
+        "format": "{:%d - %H:%M}  ",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
             "mode": "year",
@@ -253,11 +251,11 @@
             "Playing": " ",
             "Paused": " "
         },
-        "max-length": 60,
+        "max-length": 20,
         "exec": "playerctl -a metadata --format '{\"text\": \"{{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
         "on-click": "playerctl play-pause"
     },
     "custom/seperator": {
         "format": "|"
-    }
+    },
 }
