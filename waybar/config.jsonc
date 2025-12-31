@@ -27,6 +27,7 @@
         "custom/weather",
         "custom/seperator",
         "tray",
+        "custom/seperator",
         "network",
         "custom/seperator",
         "pulseaudio",
