@@ -39,7 +39,7 @@
         "clock"
     ],
     "hyprland/window": {
-        "max-length": 20,
+        "max-length": 25,
         "rewrite": {
             "": "<span foreground='#458588'></span>Desktop"
             // "kitty": " Terminal",
@@ -251,7 +251,7 @@
             "Playing": " ",
             "Paused": " "
         },
-        "max-length": 20,
+        "max-length": 30,
         "exec": "playerctl -a metadata --format '{\"text\": \"{{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
         "on-click": "playerctl play-pause"
     },
