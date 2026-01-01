@@ -28,8 +28,6 @@
         "custom/seperator",
         "tray",
         "custom/seperator",
-        "network",
-        "custom/seperator",
         "pulseaudio",
         "upower",
         "custom/seperator",
@@ -241,7 +239,7 @@
     "custom/weather": {
         "exec": "/home/inshaal-navid-malik/dotfiles/waybar/weather.sh Karachi+Pakistan",
         "return-type": "json",
-        "format": "{}",
+        "format": "{text}",
         "tooltip": true,
         "interval": 36000
     },
