@@ -171,7 +171,7 @@ window#waybar.empty {
 }
 
 #waybar .module {
-  margin: 0 6px;
+  /* margin: 0 6px; */
 }
 
 #custom-weather {
@@ -220,13 +220,35 @@ window#waybar.empty {
   margin-top: 3px;
   margin-bottom: 3px;
   color: @color0;
-  border-radius: 5px 5px 5px 5px;
-  background-color: @color10;
 }
 #cpu,
 #temperature,
 #memory,
 #disk {
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+#cpu {
+  background-color: @color11;
+  border-radius: 20px 0px 0px 20px;
+}
+
+#temperature {
+  background-color: @color14;
+}
+
+#memory {
+  background-color: @color15;
+}
+#disk {
+  background-color: @color8;
+  border-radius: 0px 20px 20px 0px;
+}
+.modules-right .module {
+  margin: 0 6px;
+}
+
+.modules-left .module {
+  margin: 0 6px;
 }

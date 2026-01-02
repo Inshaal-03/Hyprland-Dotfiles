@@ -73,7 +73,7 @@ ZSH_THEME_RANDOM_CANDIDATES=( "candy" "jonathan" "nicoulaj" "agnoster" "sorin" "
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions dnf zsh-bat docker fzf fzf-tab zoxide vi-mode )
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions dnf zsh-bat docker fzf-tab zoxide vi-mode )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -108,6 +108,7 @@ finder() {
     fi
 }
 
+source <(fzf --zsh)
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
