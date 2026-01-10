@@ -174,10 +174,6 @@ window#waybar.empty {
   /* margin: 0 6px; */
 }
 
-#custom-weather {
-  padding-top: 6px;
-}
-
 #battery.good {
   color: #1a9848;
 }
@@ -251,4 +247,7 @@ window#waybar.empty {
 
 .modules-left .module {
   margin: 0 6px;
+}
+#temperature.critical {
+  color: darkred;
 }

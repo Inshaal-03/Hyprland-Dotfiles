@@ -6,6 +6,7 @@
     "include": [
         "~/dotfiles/waybar/ModulesWorkspaces.txt"
     ],
+    "reload_style_on_change": true,
     "height": 24,
     "margin-top": 0,
     "margin-right": 0,
@@ -25,6 +26,7 @@
     ],
     "modules-right": [
         "custom/weather",
+        // "custom/sysmon",
         "custom/seperator",
         "tray",
         "custom/seperator",
@@ -257,4 +259,10 @@
     "custom/seperator": {
         "format": "|"
     },
+    "custom/sysmon": {
+        "exec": "~/dotfiles/waybar/monitor.py",
+        "return-type": "json",
+        "interval": 2,
+        "tooltip": true
+    }
 }
