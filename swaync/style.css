@@ -1,7 +1,7 @@
 /* ----------- 💫 https://github.com/JaKooLit 💫 -------- */
 /* swaync colors - wallust from waybar.css */
 
-@import '/home/inshaal-navid-malik/.cache/wal/colors-waybar.css';
+@import '/home/inshaal/.cache/wal/colors-waybar.css';
 
 @define-color noti-border-color @color12;
 @define-color noti-bg rgba(0, 0, 0, 0.8);

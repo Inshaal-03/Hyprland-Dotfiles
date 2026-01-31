@@ -9,7 +9,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="random"
-ZSH_THEME="jonathan"
+ZSH_THEME="candy"
 # ZSH_THEME="af-magic"
 ZSH_THEME_RANDOM_CANDIDATES=( "candy" "jonathan" "nicoulaj" "agnoster" "sorin" "af-magic" )
 
@@ -73,7 +73,7 @@ ZSH_THEME_RANDOM_CANDIDATES=( "candy" "jonathan" "nicoulaj" "agnoster" "sorin" "
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions dnf zsh-bat docker fzf-tab zoxide vi-mode )
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions docker fzf-tab zoxide vi-mode )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -139,11 +139,11 @@ alias volume='pavucontrol'
 alias update='sudo dnf update -y'
 alias cls='clear'
 export PATH=$HOME/.cargo/bin:$PATH
-export PATH=$HOME/.local/bin:$PATH
+# export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.local/share/cargo/bin/:$PATH
 export PATH=$PATH:/usr/local/go/bin
 eval "$(zoxide init zsh)"
-test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
-test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc
+# test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
+# test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc
 EDITOR=nvim

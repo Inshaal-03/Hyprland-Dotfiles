@@ -22,10 +22,10 @@
         "custom/media"
     ],
     "modules-center": [
-        "group/mobo_drawer",
+        "group/mobo_drawer"
     ],
     "modules-right": [
-        "custom/weather",
+        // "custom/weather",
         // "custom/sysmon",
         "custom/seperator",
         "tray",
@@ -215,7 +215,7 @@
     "custom/notification": {
         "tooltip": true,
         "tooltip-format": "Left Click: Launch Notification Center\nRight Click: Do not Disturb",
-        "format": "{} {icon} ",
+        "format": "{} {icon}",
         "format-icons": {
             "notification": "<span foreground='red'><sup></sup></span>",
             "none": "",
@@ -239,7 +239,7 @@
         "hide-if-empty": true
     },
     "custom/weather": {
-        "exec": "/home/inshaal-navid-malik/dotfiles/waybar/weather.sh Karachi+Pakistan",
+        "exec": "~/dotfiles/waybar/weather.sh Karachi+Pakistan",
         "return-type": "json",
         "format": "{text}",
         "tooltip": true,

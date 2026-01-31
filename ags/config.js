@@ -8,7 +8,7 @@ const COMPILED_STYLE_DIR = `${GLib.get_user_config_dir()}/ags/user/`;
 
 async function applyStyle() {
   App.resetCss();
-  App.applyCss(`/home/inshaal-navid-malik/dotfiles/ags/user/style.css`);
+  App.applyCss(`/home/inshaal/dotfiles/ags/user/style.css`);
   console.log("[LOG] Styles loaded");
 }
 applyStyle().catch(print);
@@ -16,7 +16,7 @@ applyStyle().catch(print);
 const Windows = () => [Overview()];
 const CLOSE_ANIM_TIME = 210;
 App.config({
-  css: `/home/inshaal-navid-malik/dotfiles/ags/user/style.css`,
+  css: `/home/inshaal/dotfiles/ags/user/style.css`,
   stackTraceOnError: true,
   closeWindowDelay: {
     sideright: CLOSE_ANIM_TIME,
