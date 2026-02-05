@@ -60,6 +60,15 @@ margin = 50
 preserve_aspect = true
 
 
+[scratchpads.wiremix]
+animation = "fromTop"
+command = "kitty --class wiremix wiremix"
+class = "wiremix"
+size = "60% 60%"
+position = "21% 20%"
+margin = 50
+preserve_aspect = true
+
 [scratchpads.bluetui]
 animation = "fromTop"
 command = "kitty --class bluetui bluetui"

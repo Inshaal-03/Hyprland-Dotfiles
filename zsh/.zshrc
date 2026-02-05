@@ -1,4 +1,4 @@
-# If you come from bash you might have to change your $PATH.
+
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your Oh My Zsh installation.
@@ -9,9 +9,9 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="random"
-ZSH_THEME="candy"
+ZSH_THEME="sorin"
 # ZSH_THEME="af-magic"
-ZSH_THEME_RANDOM_CANDIDATES=( "candy" "jonathan" "nicoulaj" "agnoster" "sorin" "af-magic" )
+# ZSH_THEME_RANDOM_CANDIDATES=( "candy" "jonathan" "nicoulaj" "agnoster" "sorin" "af-magic" )
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -91,27 +91,10 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='nvim'
 # fi
 
-finder() {
-    # Run the script and capture the result
-    local result=$($HOME/dotfiles/hypr/scripts/file_finder.sh)
-    echo "$result"
-    # Check if the script told us to CD
-    if [[ "$result" == TYPE_DIR:* ]]; then
-        local target_dir="${result#TYPE_DIR:}"
-	echo "$target_dir"
-        cd "$target_dir"
-    fi
-    if [[ "$result" == TYPE_FILE:* ]]; then
-	local target_file="${result#TYPE_FILE:}"
-	echo "$target_file"
-	nvim "$target_file"
-    fi
-}
-
 source <(fzf --zsh)
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
-
+bindkey -M viins "jk" vi-cmd-mode
 # Set personal aliases, overriding those provided by Oh My Zsh libs,
 # plugins, and themes. Aliases can be placed here, though Oh My Zsh
 # users are encouraged to define aliases within a top-level file in
@@ -125,25 +108,15 @@ source <(fzf --zsh)
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 alias ls="eza --icons"
-alias tree="eza --icons --tree"
-alias icat="kitten icat"
 alias nvimdir='nvim -c "cd $(find . -type d | fzf --preview '\''bat --style=plain --color=always {}|| ls -1 {}'\'' )" -c '
-alias search-package="dnf list --installed | grep -i"
 alias ff='fastfetch'
 alias cf='cpufetch'
 alias v='nvim'
-alias find-file='~/dotfiles/hypr/scripts/file_finder.sh'
+alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 # alias removeKVMIntel ="sudo modprobe -r kvm_intel"
 # alias removeKVM="sudo modprobe -r kvm"
-alias volume='pavucontrol'
-alias update='sudo dnf update -y'
-alias cls='clear'
 export PATH=$HOME/.cargo/bin:$PATH
 # export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.local/share/cargo/bin/:$PATH
 export PATH=$PATH:/usr/local/go/bin
 eval "$(zoxide init zsh)"
-# test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
-# test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-# echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc
-EDITOR=nvim

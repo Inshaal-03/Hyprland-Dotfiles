@@ -4,7 +4,7 @@
 //                                 YP  YP    dP""""Yb   dP     88oodP  dP""""Yb  88  Yb 
 {
     "include": [
-        "~/dotfiles/waybar/ModulesWorkspaces.txt"
+        "~/Dotfiles/waybar/ModulesWorkspaces.txt"
     ],
     "reload_style_on_change": true,
     "height": 24,
@@ -25,7 +25,7 @@
         "group/mobo_drawer"
     ],
     "modules-right": [
-        // "custom/weather",
+        "custom/weather",
         // "custom/sysmon",
         "custom/seperator",
         "tray",
@@ -42,22 +42,20 @@
     "hyprland/window": {
         "max-length": 25,
         "rewrite": {
-            "": "<span foreground='#458588'></span>Desktop"
-            // "kitty": " Terminal",
-            // "inshaal-navid-malik@fedora:~": " Terminal",
-            // "~": "  Terminal",
-            // "zsh": "  Terminal",
-            // "tmux(.*)": "<span foreground='#a6e3a1'> </span> Tmux",
-            // "(.*) — Zen Browser": "<span foreground='#d65d0e'>󰺕 </span> $1",
-            // "(.*)Zen Browser": "<span foreground='#d65d0e'>󰺕 </span> Zen Browser",
-            // "(.*) — Zen Twilight": "<span foreground='#537CF7'>󰺕 </span> $1",
-            // "(.*)Zen Twilight": "<span foreground='#537CF7'>󰺕 </span> Zen Twilight",
-            // "nvim": "<span foreground='#98971a'> </span> Neovim",
-            // "v": "<span foreground='#98971a'> </span> Neovim",
-            // "nvim (.*)": "<span foreground='#98971a'> </span> $1",
-            // "v (.*)": "<span foreground='#98971a'> </span> $1",
-            // "Gabut Download Manager": " Gabut Download Manager",
-            // "ONLYOFFICE Desktop Editors": "<span foreground='#cc241d'> </span> OnlyOffice Desktop"
+            "": "<span foreground='#458588'></span>Desktop",
+            "kitty": " Terminal",
+            "(.*):~": "  Terminal",
+            "tmux(.*)": "<span foreground='#a6e3a1'></span> Tmux",
+            "(.*) — Zen Browser": "<span foreground='#d65d0e'>󰺕 </span> $1",
+            "(.*)Zen Browser": "<span foreground='#d65d0e'>󰺕 </span> Zen Browser",
+            "(.*) — Zen Twilight": "<span foreground='#537CF7'>󰺕 </span> $1",
+            "(.*)Zen Twilight": "<span foreground='#537CF7'>󰺕 </span> Zen Twilight",
+            "nvim": "<span foreground='#98971a'> </span> Neovim",
+            "v": "<span foreground='#98971a'> </span> Neovim",
+            "nvim (.*)": "<span foreground='#98971a'> </span> $1",
+            "v (.*)": "<span foreground='#98971a'> </span> $1",
+            "Gabut Download Manager": " Gabut Download Manager",
+            "ONLYOFFICE Desktop Editors": "<span foreground='#cc241d'> </span> OnlyOffice Desktop"
         }
     },
     "battery": {
@@ -239,7 +237,7 @@
         "hide-if-empty": true
     },
     "custom/weather": {
-        "exec": "~/dotfiles/waybar/weather.sh Karachi+Pakistan",
+        "exec": "~/Dotfiles/waybar/weather.sh Karachi+Pakistan",
         "return-type": "json",
         "format": "{text}",
         "tooltip": true,
@@ -260,7 +258,7 @@
         "format": "|"
     },
     "custom/sysmon": {
-        "exec": "~/dotfiles/waybar/monitor.py",
+        "exec": "~/Dotfiles/waybar/monitor.py",
         "return-type": "json",
         "interval": 2,
         "tooltip": true
