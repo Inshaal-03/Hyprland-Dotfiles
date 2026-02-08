@@ -1,0 +1,9 @@
+[[plugin.deps]]
+use = "yazi-rs/plugins:full-border"
+rev = "88990a6"
+hash = "3996fc74044bc44144b323686f887e1"
+
+[[flavor.deps]]
+use = "gosxrgxx/flexoki-dark"
+rev = "28e1977"
+hash = "bc4620db89cf55bd91906c239f8fa1a8"

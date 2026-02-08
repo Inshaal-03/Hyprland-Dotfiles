@@ -43,19 +43,19 @@
         "max-length": 25,
         "rewrite": {
             "": "<span foreground='#458588'></span>Desktop",
-            "kitty": " Terminal",
-            "(.*):~": "  Terminal",
-            "tmux(.*)": "<span foreground='#a6e3a1'></span> Tmux",
-            "(.*) — Zen Browser": "<span foreground='#d65d0e'>󰺕 </span> $1",
-            "(.*)Zen Browser": "<span foreground='#d65d0e'>󰺕 </span> Zen Browser",
-            "(.*) — Zen Twilight": "<span foreground='#537CF7'>󰺕 </span> $1",
-            "(.*)Zen Twilight": "<span foreground='#537CF7'>󰺕 </span> Zen Twilight",
-            "nvim": "<span foreground='#98971a'> </span> Neovim",
-            "v": "<span foreground='#98971a'> </span> Neovim",
-            "nvim (.*)": "<span foreground='#98971a'> </span> $1",
-            "v (.*)": "<span foreground='#98971a'> </span> $1",
-            "Gabut Download Manager": " Gabut Download Manager",
-            "ONLYOFFICE Desktop Editors": "<span foreground='#cc241d'> </span> OnlyOffice Desktop"
+            // "kitty": " Terminal",
+            // "(.*):~": "  Terminal",
+            // "tmux(.*)": "<span foreground='#a6e3a1'></span> Tmux",
+            // "(.*) — Zen Browser": "<span foreground='#d65d0e'>󰺕 </span> $1",
+            // "(.*)Zen Browser": "<span foreground='#d65d0e'>󰺕 </span> Zen Browser",
+            // "(.*) — Zen Twilight": "<span foreground='#537CF7'>󰺕 </span> $1",
+            // "(.*)Zen Twilight": "<span foreground='#537CF7'>󰺕 </span> Zen Twilight",
+            // "nvim": "<span foreground='#98971a'> </span> Neovim",
+            // "v": "<span foreground='#98971a'> </span> Neovim",
+            // "nvim (.*)": "<span foreground='#98971a'> </span> $1",
+            // "v (.*)": "<span foreground='#98971a'> </span> $1",
+            // "Gabut Download Manager": " Gabut Download Manager",
+            // "ONLYOFFICE Desktop Editors": "<span foreground='#cc241d'> </span> OnlyOffice Desktop"
         }
     },
     "battery": {

@@ -861,6 +861,7 @@ require("lazy").setup {
         },
         options = {},
       }
+      vim.cmd.colorscheme "carbonfox"
     end,
   },
   -- {
@@ -1092,7 +1093,7 @@ require("lazy").setup {
   {
     "Mofiqul/vscode.nvim",
     config = function()
-      vim.cmd.colorscheme "vscode"
+      vim.cmd.colorscheme "carbonfox"
     end,
   },
   {
@@ -1335,8 +1336,8 @@ require("lazy").setup {
   {
     "bergholmm/cursor-dark.nvim",
     priority = 1000,
-    config = function()
-      vim.cmd.colorscheme "cursor-dark"
-    end,
+    -- config = function()
+    --   vim.cmd.colorscheme "cursor-dark"
+    -- end,
   },
 }

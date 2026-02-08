@@ -107,6 +107,7 @@ bindkey -M viins "jk" vi-cmd-mode
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
+export EDITOR="nvim"
 alias ls="eza --icons"
 alias nvimdir='nvim -c "cd $(find . -type d | fzf --preview '\''bat --style=plain --color=always {}|| ls -1 {}'\'' )" -c '
 alias ff='fastfetch'
@@ -115,8 +116,8 @@ alias v='nvim'
 alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 # alias removeKVMIntel ="sudo modprobe -r kvm_intel"
 # alias removeKVM="sudo modprobe -r kvm"
-export PATH=$HOME/.cargo/bin:$PATH
+# export PATH=$HOME/.cargo/bin:$PATH
 # export PATH=$HOME/.local/bin:$PATH
-export PATH=$HOME/.local/share/cargo/bin/:$PATH
-export PATH=$PATH:/usr/local/go/bin
+# export PATH=$HOME/.local/share/cargo/bin/:$PATH
+# export PATH=$PATH:/usr/local/go/bin
 eval "$(zoxide init zsh)"
