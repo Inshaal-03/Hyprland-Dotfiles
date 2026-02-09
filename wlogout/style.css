@@ -5,7 +5,7 @@ window {
     font-family: "Cascadia Code";
     font-size: 16pt;
     color:  @foreground; /* text */
-    background-color: rgba(24, 27, 32, 0.9);
+    background-color: rgba(30, 30, 46, 0.8);
 } 
 
 button {
