@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+utils=(Nmtui Bluetui Wiremix Btop Nvtop Yazi Clipse)
+
+util=$(echo "${utils[*]}" | rofi -dmenu -sep " " -p "Select which utility you want to open" -l "${#utils[*]}") # "${#utils[*]}" this gives us the length of an array
+
+case "$util" in
+  Nmtui)
+    kitty --class nmtui -e nmtui
+    ;;
+  Bluetui)
+    kitty --class bluetui -e bluetui
+    ;;
+  Wiremix)
+    kitty --class wiremix -e wiremix
+    ;;
+  Btop)
+    kitty --class btop -e btop
+    ;;
+  Nvtop)
+    kitty --class nvtop -e nvtop
+    ;;
+  Yazi)
+    kitty --class yazi -e yazi
+    ;;
+  Clipse)
+    kitty --class clipse -e clipse
+    ;;
+  *)
+    exit 0
+esac

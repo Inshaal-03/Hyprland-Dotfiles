@@ -25,7 +25,7 @@
 	"on-click": "activate",
 	"on-scroll-up": "hyprctl dispatch workspace e+1",
 	"on-scroll-down": "hyprctl dispatch workspace e-1",
-    "persistent-workspaces": {
+  "persistent-workspaces": {
       "eDP-1" : [ 1, 2, 3, 4, 5 ],
 	},
 	"format-icons": {
@@ -66,8 +66,9 @@
 	"show-special": false,
 	"all-outputs": true,
 	"format": "{icon}",
-    "persistent-workspaces": {
-      "*": 5
+  "persistent-workspaces": {
+      "eDP-1" : [ 1, 2, 3, 4, 5 ],
+      "HDMI-A-1":[1, 2, 3, 4, 5],
 	},
 	"format-icons": {
 		"1": "一",

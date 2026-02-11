@@ -3,7 +3,8 @@
 dir="/home/inshaal/Wallpaper-Repository"
 
 wallpaper=$(ls $dir | rofi -dmenu -p "Select a wallpaper")
-if [[ $wallpaper == "" ]]; then
+
+if [[ -z $wallpaper ]]; then # -z returns true if string is empty
   notify-send "Error" "No wallpaper has been selected."
   exit 0
 else

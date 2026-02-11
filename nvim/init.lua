@@ -850,29 +850,6 @@ require("lazy").setup {
       signature = { enabled = true },
     },
   },
-  -- Colorscheme
-  {
-    "EdenEast/nightfox.nvim",
-    priority = 1000,
-    config = function()
-      require("nightfox").setup {
-        styles = {
-          comments = { bold = true, italic = false },
-        },
-        options = {},
-      }
-      vim.cmd.colorscheme "carbonfox"
-    end,
-  },
-  -- {
-  --   'uhs-robert/oasis.nvim',
-  --   lazy = false,
-  --   priority = 1000,
-  --   config = function()
-  --     require('oasis').setup() -- (see Configuration below for all customization options)
-  --     vim.cmd.colorscheme 'oasis-abyss' -- After setup, apply theme (or any style like "oasis-night")
-  --   end,
-  -- },
   -- {
   --   'uloco/bluloco.nvim',
   --   lazy = false,
@@ -1089,12 +1066,6 @@ require("lazy").setup {
     lazy = false,
     priority = 1000,
     opts = {},
-  },
-  {
-    "Mofiqul/vscode.nvim",
-    config = function()
-      vim.cmd.colorscheme "carbonfox"
-    end,
   },
   {
     "nvim-neo-tree/neo-tree.nvim",
@@ -1336,8 +1307,8 @@ require("lazy").setup {
   {
     "bergholmm/cursor-dark.nvim",
     priority = 1000,
-    -- config = function()
-    --   vim.cmd.colorscheme "cursor-dark"
-    -- end,
+    config = function()
+      vim.cmd.colorscheme "cursor-dark"
+    end,
   },
 }

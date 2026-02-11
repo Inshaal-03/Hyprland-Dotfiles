@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+powermenu=(Shutdown Reboot Logout Hibernate Lock)
+option=$(echo "${powermenu[*]}" | rofi -dmenu -p "Select an option" -sep " " -l "${#powermenu[*]}")
+
+case $option in
+  Shutdown)
+    systemctl poweroff
+    ;;
+  Reboot)
+    systemctl reboot
+    ;;
+  Logout)
+    hyprctl dispatch exit
+    ;;
+  Hibernate)
+    swaylock -f && systemctl hibernate
+    ;;
+  Lock)
+    hyprlock
+    ;;
+  *)
+    exit 0
+esac
