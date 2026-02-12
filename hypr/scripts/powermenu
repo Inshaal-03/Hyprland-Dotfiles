@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 powermenu=(Shutdown Reboot Logout Hibernate Lock)
-option=$(echo "${powermenu[*]}" | rofi -dmenu -p "Select an option" -sep " " -l "${#powermenu[*]}")
+option=$(echo "${powermenu[*]}" | rofi -dmenu -i -p "Select an option" -sep " " -l "${#powermenu[*]}")
 
 case $option in
   Shutdown)

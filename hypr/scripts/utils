@@ -2,7 +2,7 @@
 
 utils=(Nmtui Bluetui Wiremix Btop Nvtop Yazi Clipse)
 
-util=$(echo "${utils[*]}" | rofi -dmenu -sep " " -p "Select which utility you want to open" -l "${#utils[*]}") # "${#utils[*]}" this gives us the length of an array
+util=$(echo "${utils[*]}" | rofi -dmenu -i -sep " " -p "Select which utility you want to open" -l "${#utils[*]}") # "${#utils[*]}" this gives us the length of an array
 
 case "$util" in
   Nmtui)
