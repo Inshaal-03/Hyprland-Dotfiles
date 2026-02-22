@@ -9,7 +9,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="random"
-ZSH_THEME="jaischeema"
+ZSH_THEME="sorin"
 # ZSH_THEME="af-magic"
 # ZSH_THEME_RANDOM_CANDIDATES=( "candy" "jonathan" "nicoulaj" "agnoster" "sorin" "af-magic" )
 
@@ -50,7 +50,7 @@ ZSH_THEME="jaischeema"
 # You can also set it to another string to have that shown instead of the default red dots.
 # e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
 # Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -73,7 +73,7 @@ ZSH_THEME="jaischeema"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions docker fzf-tab zoxide vi-mode )
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions docker zoxide vi-mode )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -90,6 +90,11 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='nvim'
 # fi
+
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=1000
+setopt SHARE_HISTORY
 
 source <(fzf --zsh)
 # Compilation flags

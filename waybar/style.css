@@ -205,7 +205,7 @@ window#waybar.empty {
   padding-right: 8px;
 }
 #custom-media {
-  font-size: 98%;
+  font-size: 99%;
   font-family:
     "Cascadia Code", "FiraCode Nerd Font",
     "JetBrainsMono Nerd Font Propo Regular";
@@ -235,10 +235,10 @@ window#waybar.empty {
 }
 
 #memory {
-  background-color: @color15;
+  background-color: @color13;
 }
 #disk {
-  background-color: @color8;
+  background-color: @color10;
   border-radius: 0px 20px 20px 0px;
 }
 .modules-right .module {
