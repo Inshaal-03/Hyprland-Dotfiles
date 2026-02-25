@@ -240,7 +240,7 @@ create_square_cover() {
 
   # Create square crop with ImageMagick
   if have convert; then
-    convert "$input" -auto-orient -gravity center \
+    magick "$input" -auto-orient -gravity center \
       -thumbnail "${SQUARE_SIZE}x${SQUARE_SIZE}^" \
       -extent "${SQUARE_SIZE}x${SQUARE_SIZE}" \
       -quality 90 "$output" && printf '%s' "$output" && return

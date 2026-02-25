@@ -2,7 +2,7 @@
 
 dir="/home/inshaal/Wallpaper-Repository"
 
-wallpaper=$(ls $dir | rofi -i -dmenu -p "Select a wallpaper")
+wallpaper=$(fd --full-path "$dir" --type f -x basename | rofi -i -dmenu -p "Select a wallpaper")
 
 if [[ -z $wallpaper ]]; then # -z returns true if string is empty
   notify-send "Error" "No wallpaper has been selected."

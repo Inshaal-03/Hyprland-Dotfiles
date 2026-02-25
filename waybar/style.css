@@ -205,10 +205,11 @@ window#waybar.empty {
   padding-right: 8px;
 }
 #custom-media {
-  font-size: 99%;
+  font-size: 100%;
   font-family:
     "Cascadia Code", "FiraCode Nerd Font",
     "JetBrainsMono Nerd Font Propo Regular";
+  color: @color10;
 }
 .modules-center {
   padding-right: 15px;
