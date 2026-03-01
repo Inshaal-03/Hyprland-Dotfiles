@@ -221,7 +221,8 @@ window#waybar.empty {
 #cpu,
 #temperature,
 #memory,
-#disk {
+#disk,
+#custom-distro {
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -241,6 +242,11 @@ window#waybar.empty {
 #disk {
   background-color: @color10;
   border-radius: 0px 20px 20px 0px;
+}
+#custom-distro {
+  background-color: @color12;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .modules-right .module {
   margin: 0 6px;
