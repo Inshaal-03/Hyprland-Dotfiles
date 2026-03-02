@@ -19,15 +19,15 @@
     "hyprland/workspaces#kanji",
     "custom/right#1",
     "hyprland/window",
-    "custom/seperator",
-    "custom/media"
+    "custom/right#window",
+    "custom/media",
+    "custom/right#media"
   ],
   "modules-center": [
     "group/mobo_drawer"
   ],
   "modules-right": [
     "custom/weather",
-    // "custom/sysmon",
     "custom/seperator",
     "tray",
     "custom/seperator",
@@ -46,6 +46,12 @@
   "custom/left#1": {
     "format": ""
   },
+  "custom/right#window": {
+    "format": ""
+  },
+  "custom/right#media": {
+    "format": ""
+  },
   "custom/distro": {
     "format": "󰣇",
     "on-click": "rofi -show drun",
@@ -54,9 +60,9 @@
   "hyprland/window": {
     "max-length": 25,
     "rewrite": {
-      "": "<span foreground='#458588'></span>Desktop"
+      "": "<span foreground='#458588'></span>Desktop",
       // "kitty": " Terminal",
-      // "(.*):~": "  Terminal",
+      "(.*)~": "Kitty"
       // "tmux(.*)": "<span foreground='#a6e3a1'></span> Tmux",
       // "(.*) — Zen Browser": "<span foreground='#d65d0e'>󰺕 </span> $1",
       // "(.*)Zen Browser": "<span foreground='#d65d0e'>󰺕 </span> Zen Browser",

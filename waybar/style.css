@@ -167,7 +167,7 @@ window#waybar,
 window#waybar.empty,
 window#waybar.empty {
   color: @color6;
-  background-color: alpha(@color0, 0.7);
+  background-color: alpha(@color0, 0.8);
 }
 
 #waybar .module {
@@ -199,8 +199,7 @@ window#waybar.empty {
 .modules-center {
   padding-right: 15px;
   padding-left: 15px;
-  margin-top: 3px;
-  margin-bottom: 3px;
+  margin-left: 20px;
   color: @color0;
 }
 #cpu,
@@ -243,40 +242,57 @@ window#waybar.empty {
 #temperature.critical {
   color: darkred;
 }
-/* #window{ */
-/*   margin-top: 4px; */
-/*   margin-bottom: 5px; */
-/*   margin-right: 0px; */
-/*   background-color: @color13; */
-/* } */
-/* #custom-seperatorarrow{ */
-/*   font-size: 20px; */
-/*   color: @color13; */
-/*   margin: 0px; */
-/* } */
 
 #workspaces {
-  margin-left: 1px;
+  margin-left: 0px;
   margin-right: 0px;
-  background: alpha(@color11, 0.4);
+  background: @color12;
   border: none;
 }
 
 #workspaces button {
-  color: @color14;
+  color: black;
 }
 
 #workspaces button.active {
-  color: @color7;
+  color: white;
 }
 
 #custom-right.1{
-  margin-left: 0px;
-  color: alpha(@color11, 0.4);
-  font-size: 26px;
+  margin-left: 1px;
+  margin-right: 0px;
+  color: @color12;
+  font-size: 27px;
+  background: @color11;
 }
 #custom-left.1{
   margin-right:0px;
-  color: alpha(@color11, 0.4);
+  color: @color12;
+  font-size: 27px;
+}
+#window{
+  margin: 0px;
+  color: @color0;
+  padding-right: 4px;
+  padding-left: 4px;
+  background: @color11;
+}
+#custom-right.window{
+  margin: 0px;
   font-size: 26px;
+  color: @color11;
+  background-color: @color10;
+}
+#custom-media{
+  padding-right: 4px;
+  padding-left: 4px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: @color10;
+  color: @color0
+}
+#custom-right.media{
+  margin-left: 0px;
+  font-size: 26px;
+  color: @color10;
 }
