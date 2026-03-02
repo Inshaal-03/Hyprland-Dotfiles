@@ -186,21 +186,6 @@ window#waybar.empty {
   color: rgb(221, 0, 0);
 }
 
-#workspaces button {
-  color: @color3;
-}
-
-#workspaces button.active {
-  color: black;
-  background-color: @color6;
-  border-radius: 10px 10px 10px 10px;
-}
-
-#workspaces button:hover {
-  color: black;
-  background-color: @color15;
-}
-
 #network {
   padding-right: 8px;
 }
@@ -257,4 +242,41 @@ window#waybar.empty {
 }
 #temperature.critical {
   color: darkred;
+}
+/* #window{ */
+/*   margin-top: 4px; */
+/*   margin-bottom: 5px; */
+/*   margin-right: 0px; */
+/*   background-color: @color13; */
+/* } */
+/* #custom-seperatorarrow{ */
+/*   font-size: 20px; */
+/*   color: @color13; */
+/*   margin: 0px; */
+/* } */
+
+#workspaces {
+  margin-left: 1px;
+  margin-right: 0px;
+  background: alpha(@color11, 0.4);
+  border: none;
+}
+
+#workspaces button {
+  color: @color14;
+}
+
+#workspaces button.active {
+  color: @color7;
+}
+
+#custom-right.1{
+  margin-left: 0px;
+  color: alpha(@color11, 0.4);
+  font-size: 26px;
+}
+#custom-left.1{
+  margin-right:0px;
+  color: alpha(@color11, 0.4);
+  font-size: 26px;
 }

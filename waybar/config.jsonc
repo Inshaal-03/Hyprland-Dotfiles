@@ -15,8 +15,9 @@
   "layer": "top",
   "position": "top",
   "modules-left": [
+    "custom/left#1",
     "hyprland/workspaces#kanji",
-    "custom/seperator",
+    "custom/right#1",
     "hyprland/window",
     "custom/seperator",
     "custom/media"
@@ -39,6 +40,12 @@
     "custom/seperator",
     "clock"
   ],
+  "custom/right#1": {
+    "format": ""
+  },
+  "custom/left#1": {
+    "format": ""
+  },
   "custom/distro": {
     "format": "󰣇",
     "on-click": "rofi -show drun",
