@@ -169,7 +169,7 @@ window#waybar.empty {
 #battery{
   background-color: @color0;
   margin: 4px 0px;
-  padding:0px 4px;
+  padding:0px 15px;
 }
 #custom-left.notification{
   background-color: @color0;
