@@ -17,7 +17,22 @@
   "custom/right#media": {
     "format": ""
   },
-  "custom/seperator": {
-    "format": "|"
+  "custom/left#tray": {
+    "format": ""
+  },
+  "custom/left#volume": {
+    "format": ""
+  },
+  "custom/left#battery": {
+    "format": ""
+  },
+  "custom/left#notification": {
+    "format": ""
+  },
+  "custom/left#calendar": {
+    "format": ""
+  },
+  "custom/right#calendar": {
+    "format": ""
   }
 }

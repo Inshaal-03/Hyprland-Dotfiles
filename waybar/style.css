@@ -1,11 +1,8 @@
 @import "../../.cache/wal/colors-waybar.css";
 * {
-  font-family:
-    "Cascadia Code", "FiraCode Nerd Font",
-    "JetBrainsMono Nerd Font Propo Regular";
-  font-size: 100%;
+  font-family: "Cascadia Code", "FiraCode Nerd Font", "JetBrainsMono Nerd Font Propo Regular";
   font-weight: bold;
-  font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+  font-size: 100%;
 }
 
 window#waybar,
@@ -28,7 +25,6 @@ window#waybar.empty {
 }
 
 #custom-media {
-  font-size: 100%;
   font-family:
     "Cascadia Code", "FiraCode Nerd Font",
     "JetBrainsMono Nerd Font Propo Regular";
@@ -135,5 +131,67 @@ window#waybar.empty {
 
 #custom-left.cpu{
   color: @color11;
+  margin-left: 60px;
   font-size: 26px;
+}
+
+#tray{
+  background-color:alpha(@color5, 0.3);
+  margin: 4px 0px;
+  padding: 0px 10px;
+}
+
+#custom-left.tray{
+  color:alpha(@color5, 0.3);
+  margin: 0px;
+  font-size: 27px;
+}
+#pulseaudio{
+  color: @color0;
+  padding: 0px 10px;
+  background-color:@color10;
+  margin: 4px 0px;
+}
+
+#custom-left.volume{
+  background-color:alpha(@color5, 0.3);
+  margin: 4px 0px;
+  color:@color10;
+  font-size: 26px;
+}
+
+#custom-left.battery{
+  background-color:@color10;
+  margin: 4px 0px;
+  color:@color0;
+  font-size: 26px;
+}
+#battery{
+  background-color: @color0;
+  margin: 4px 0px;
+  padding:0px 4px;
+}
+#custom-left.notification{
+  background-color: @color0;
+  color: @color11;
+  margin: 4px 0px;
+  font-size: 26px;
+}
+#custom-notification{
+  background-color: @color11;
+  margin: 4px 0px;
+  padding:0px 10px;
+  color: @color0;
+}
+#custom-left.calendar{
+  background-color: @color11;
+  margin: 4px 0px;
+  font-size: 25px;
+  color: @color14;
+}
+#clock{
+  background-color: @color14;
+  color: @color0;
+  margin: 4px 0px;
+  padding:0px 5px;
 }

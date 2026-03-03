@@ -11,7 +11,6 @@
   "layer": "top",
   "position": "top",
   "modules-left": [
-    "custom/left#1",
     "hyprland/workspaces#kanji",
     "custom/right#1",
     "hyprland/window",
@@ -23,15 +22,16 @@
     "group/mobo_drawer"
   ],
   "modules-right": [
+    "custom/left#tray",
     "tray",
-    "custom/seperator",
+    "custom/left#volume",
     "pulseaudio",
     "upower",
-    "custom/seperator",
+    "custom/left#battery",
     "battery",
-    "custom/seperator",
+    "custom/left#notification",
     "custom/notification",
-    "custom/seperator",
+    "custom/left#calendar",
     "clock"
   ],
   "tray": {
