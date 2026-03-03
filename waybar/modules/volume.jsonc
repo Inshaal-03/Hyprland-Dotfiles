@@ -1,0 +1,27 @@
+{
+  "pulseaudio": {
+    "format": "{volume}%{format_source} {icon}",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-bluetooth-muted": "{icon} ",
+    "format-muted": " ",
+    "format-source": "",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        " ",
+        " ",
+        " "
+      ]
+    },
+    "max-volume": 200,
+    // "on-scroll-up": "wpctl set-volume @DEFAULT_SINK@ 10%+",
+    // "on-scroll-down": "wpctl set-volume @DEFAULT_SINK@ 10%-",
+    "on-click": "pavucontrol"
+  }
+}

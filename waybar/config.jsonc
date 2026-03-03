@@ -1,13 +1,9 @@
-//                              Yb        dP    db     Yb  dP  88""Yb     db     88""Yb 
-//                               Yb  db  dP    dPYb     YbdP   88__dP    dPYb    88__dP 
-//                                YbdPYbdP    dP__Yb     8P    88""Yb   dP__Yb   88"Yb  
-//                                 YP  YP    dP""""Yb   dP     88oodP  dP""""Yb  88  Yb 
 {
   "include": [
-    "~/Dotfiles/waybar/ModulesWorkspaces.txt"
+    "~/Dotfiles/waybar/modules/*.jsonc"
   ],
   "reload_style_on_change": true,
-  "height": 24,
+  "height": 22,
   "margin-top": 0,
   "margin-right": 0,
   "margin-left": 0,
@@ -27,8 +23,6 @@
     "group/mobo_drawer"
   ],
   "modules-right": [
-    "custom/weather",
-    "custom/seperator",
     "tray",
     "custom/seperator",
     "pulseaudio",
@@ -40,248 +34,20 @@
     "custom/seperator",
     "clock"
   ],
-  "custom/right#1": {
-    "format": ""
-  },
-  "custom/left#1": {
-    "format": ""
-  },
-  "custom/right#window": {
-    "format": ""
-  },
-  "custom/right#media": {
-    "format": ""
-  },
-  "custom/distro": {
-    "format": "󰣇",
-    "on-click": "rofi -show drun",
-    "tooltip-format": "Open Rofi"
-  },
-  "hyprland/window": {
-    "max-length": 25,
-    "rewrite": {
-      "": "<span foreground='#458588'></span>Desktop",
-      // "kitty": " Terminal",
-      "(.*)~": "Kitty"
-      // "tmux(.*)": "<span foreground='#a6e3a1'></span> Tmux",
-      // "(.*) — Zen Browser": "<span foreground='#d65d0e'>󰺕 </span> $1",
-      // "(.*)Zen Browser": "<span foreground='#d65d0e'>󰺕 </span> Zen Browser",
-      // "(.*) — Zen Twilight": "<span foreground='#537CF7'>󰺕 </span> $1",
-      // "(.*)Zen Twilight": "<span foreground='#537CF7'>󰺕 </span> Zen Twilight",
-      // "nvim": "<span foreground='#98971a'> </span> Neovim",
-      // "v": "<span foreground='#98971a'> </span> Neovim",
-      // "nvim (.*)": "<span foreground='#98971a'> </span> $1",
-      // "v (.*)": "<span foreground='#98971a'> </span> $1",
-      // "Gabut Download Manager": " Gabut Download Manager",
-      // "ONLYOFFICE Desktop Editors": "<span foreground='#cc241d'> </span> OnlyOffice Desktop"
-    }
-  },
-  "battery": {
-    "align": 0,
-    "rotate": 0,
-    "full-at": 100,
-    "design-capacity": false,
-    "states": {
-      "good": 100,
-      "warning": 30,
-      "critical": 15
-    },
-    "format": "{capacity}% {icon}",
-    "format-charging": "{capacity}% {icon}",
-    "format-plugged": "{capacity}% 󱘖",
-    "format-alt-click": "click",
-    "format-full": "{capacity}% {icon}",
-    "format-alt": "{time} {icon}",
-    "format-icons": {
-      "charging": [
-        "󰢜",
-        "󰂆",
-        "󰂇",
-        "󰂈",
-        "󰢝",
-        "󰂉",
-        "󰢞",
-        "󰂊",
-        "󰂋",
-        "󰂅"
-      ],
-      "default": [
-        "󰁺",
-        "󰁻",
-        "󰁼",
-        "󰁽",
-        "󰁾",
-        "󰁿",
-        "󰂀",
-        "󰂁",
-        "󰂂",
-        "󰁹"
-      ]
-    },
-    "format-time": "{H}h {M}min",
-    "tooltip": true,
-    "tooltip-format": "{timeTo}"
-  },
-  "clock": {
-    "format": "{:%d - %H:%M}  ",
-    "tooltip-format": "<tt><small>{calendar}</small></tt>",
-    "calendar": {
-      "mode": "year",
-      "mode-mon-col": 3,
-      "weeks-pos": "right",
-      "on-scroll": 1,
-      "format": {
-        "months": "<span color='#ffead3'><b>{}</b></span>",
-        "days": "<span color='#ecc6d9'><b>{}</b></span>",
-        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
-        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
-      }
-    },
-    "actions": {
-      "on-click-right": "mode"
-    }
-  },
   "tray": {
     "icon-size": 20,
     "spacing": 10
   },
-  "network": {
-    "format-wifi": "{essid} ({signalStrength}%) ",
-    "format-ethernet": "{ipaddr}/{cidr} ",
-    "format-linked": "{ifname} (No IP) 󰩟",
-    "format-disconnected": "Disconnected ⚠",
-    "on-click-right": "kitty nmtui",
-    "tooltip": false
-  },
-  "pulseaudio": {
-    "format": "{volume}%{format_source} {icon}",
-    "format-bluetooth": "{volume}% {icon}",
-    "format-bluetooth-muted": "{icon} ",
-    "format-muted": " ",
-    "format-source": "",
-    "format-source-muted": "",
-    "format-icons": {
-      "headphone": "",
-      "hands-free": "",
-      "headset": "",
-      "phone": "",
-      "portable": "",
-      "car": "",
-      "default": [
-        " ",
-        " ",
-        " "
-      ]
-    },
-    "max-volume": 200,
-    // "on-scroll-up": "wpctl set-volume @DEFAULT_SINK@ 10%+",
-    // "on-scroll-down": "wpctl set-volume @DEFAULT_SINK@ 10%-",
-    "on-click": "pavucontrol"
-  },
   "group/mobo_drawer": {
     "orientation": "inherit",
     "modules": [
+      "custom/left#cpu",
       "cpu",
       "temperature",
       "custom/distro",
       "memory",
-      "disk"
+      "disk",
+      "custom/right#disk"
     ]
-  },
-  "cpu": {
-    "format": "{usage:>2}% 󰍛",
-    "interval": 1,
-    "min-length": 5,
-    "format-alt-click": "click",
-    "format-alt": "{max_frequency} GHz 󰾆"
-  },
-  "disk": {
-    "interval": 30,
-    "path": "/",
-    "format": "{percentage_used}% 󰋊",
-    "tooltip-format": "Click: Open Gnome Disks\nRight Click: Open Gnome Disk Usage Analyzer",
-    "on-click": "gnome-disks",
-    "on-click-right": "baobab /home/inshaal/"
-  },
-  "memory": {
-    "interval": 10,
-    "format": "{used:0.1f}GB  ",
-    "format-alt": "{percentage}%  ",
-    "format-alt-click": "click",
-    "tooltip": false
-  },
-  "temperature": {
-    "thermal-zone": 6,
-    "interval": 10,
-    "critical-threshold": 80,
-    "format-critical": "{temperatureC}°C ",
-    "tooltip": false,
-    "format": "{temperatureC}°C "
-  },
-  "group/network_drawer": {
-    "orientation": "inherit",
-    "drawer": {
-      "transition-duration": 500,
-      "children-class": "cpu",
-      "transition-left-to-right": true
-    },
-    "modules": [
-      "tray",
-      "network"
-    ]
-  },
-  "custom/notification": {
-    "tooltip": true,
-    "tooltip-format": "Left Click: Launch Notification Center\nRight Click: Do not Disturb",
-    "format": "{} {icon}",
-    "format-icons": {
-      "notification": "<span foreground='red'><sup></sup></span>",
-      "none": "",
-      "dnd-notification": "<span foreground='red'><sup></sup></span>",
-      "dnd-none": "",
-      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
-      "inhibited-none": "",
-      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
-      "dnd-inhibited-none": ""
-    },
-    "return-type": "json",
-    "exec-if": "which swaync-client",
-    "exec": "swaync-client -swb",
-    "on-click": "swaync-client -t -sw",
-    "on-click-right": "swaync-client -d -sw",
-    "escape": true
-  },
-  "upower": {
-    "native-path": "/org/freedesktop/UPower/devices/headset_dev_DB_3E_52_DB_29_BC",
-    "icon-size": 20,
-    "hide-if-empty": true
-  },
-  "custom/weather": {
-    "exec": "~/Dotfiles/waybar/weather.sh Karachi+Pakistan",
-    "return-type": "json",
-    "format": "{text}",
-    "tooltip": true,
-    "interval": 36000
-  },
-  "custom/media": {
-    "format": "{icon}{text}",
-    "return-type": "json",
-    "format-icons": {
-      "Playing": " ",
-      "Paused": " "
-    },
-    "max-length": 30,
-    "exec": "playerctl -a metadata --format '{\"text\": \"{{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
-    "on-click": "playerctl play-pause"
-  },
-  "custom/seperator": {
-    "format": "|"
-  },
-  "custom/sysmon": {
-    "exec": "~/Dotfiles/waybar/monitor.py",
-    "return-type": "json",
-    "interval": 2,
-    "tooltip": true
   }
 }

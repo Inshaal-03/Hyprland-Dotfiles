@@ -1,0 +1,7 @@
+{
+  "upower": {
+    "native-path": "/org/freedesktop/UPower/devices/headset_dev_DB_3E_52_DB_29_BC",
+    "icon-size": 20,
+    "hide-if-empty": true
+  }
+}

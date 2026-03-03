@@ -1,0 +1,23 @@
+{
+  "custom/right#1": {
+    "format": ""
+  },
+  "custom/left#1": {
+    "format": ""
+  },
+  "custom/right#window": {
+    "format": ""
+  },
+  "custom/left#cpu": {
+    "format": ""
+  },
+  "custom/right#disk": {
+    "format": ""
+  },
+  "custom/right#media": {
+    "format": ""
+  },
+  "custom/seperator": {
+    "format": "|"
+  }
+}

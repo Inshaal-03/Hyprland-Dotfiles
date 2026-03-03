@@ -1,0 +1,7 @@
+{
+  "custom/distro": {
+    "format": "󰣇",
+    "on-click": "rofi -show drun",
+    "tooltip-format": "Open Rofi"
+  }
+}

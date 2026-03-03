@@ -1,159 +1,4 @@
 @import "../../.cache/wal/colors-waybar.css";
-/*
-* {
-  font-family: "FiraCode Nerd Font", "JetBrainsMono Nerd Font Propo Regular";
-  font-size: 97%;
-  font-weight: bold;
-  font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
-}
-
-window#waybar,
-window#waybar.empty,
-window#waybar.empty #window {
-  background-color: transparent;
-}
-
-#waybar .module {
-  margin: 0 4px;
-}
-
-tooltip {
-  color: white;
-  background: #1e1e2e;
-  opacity: 0.8;
-  border-radius: 10px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: white;
-}
-
-tooltip label {
-  color: #cdd6f4;
-}
-
-#battery.good {
-  color: #1a9848;
-}
-
-#battery.warning {
-  color: rgb(194, 194, 0);
-}
-
-#battery.critical {
-  color: rgb(221, 0, 0);
-}
-
-#workspaces {
-  background-color: @color0;
-  border-radius: 10px 10px 10px 10px;
-  padding-top: 2px;
-  padding-bottom: 8px;
-  padding-right: 8px;
-  padding-bottom: 2px;
-}
-
-#workspaces button {
-  color: @color3;
-}
-
-#workspaces button.active {
-  color: black;
-  background-color: @color6;
-  border-radius: 10px 10px 10px 10px;
-}
-
-#workspaces button:hover {
-  color: black;
-  background-color: @color15;
-  border-radius: 10px 10px 10px 10px;
-}
-
-#window {
-  color: @color0;
-  background-color: @color3;
-  border-radius: 10px 10px 10px 10px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-right: 8px;
-  padding-left: 8px;
-}
-
-window#waybar.empty #window {
-  color: @color0;
-  background-color: @color3;
-  border-radius: 10px 10px 10px 10px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-right: 8px;
-  padding-left: 8px;
-}
-
-#tray,
-#battery {
-  color: @color6;
-  background-color: @color0;
-  border-radius: 10px 10px 10px 10px;
-  margin-right: 60px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-#clock,
-#custom-notification,
-#custom-headset,
-#pulseaudio,
-#network,
-#custom-weather,
-#custom-media{
-  color: @color13;
-  background-color: @color0;
-  border-radius: 10px 10px 10px 10px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 15px;
-  padding-right: 10px;
-}
-
-#clock,
-#custom-weather {
-  padding-right: 15px;
-}
-
-#custom-headset,
-#pulseaudio {
-  padding-right: 17px;
-}
-#custom-weather {
-    padding-top: 6px;
-}
-#network {
-  padding-right: 20px;
-}
-
-#temperature.critical {
-  color: darkred;
-}
-
-.modules-center {
-  background-color: @color0;
-  border-radius: 10px 10px 10px 10px;
-  background-color: @color0;
-}
-
-#cpu,
-#memory,
-#disk,
-#temperature {
-  padding-top: 2px;
-  color: @color6;
-  padding-bottom: 2px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-*/
-
 * {
   font-family:
     "Cascadia Code", "FiraCode Nerd Font",
@@ -170,10 +15,6 @@ window#waybar.empty {
   background-color: alpha(@color0, 0.8);
 }
 
-#waybar .module {
-  /* margin: 0 6px; */
-}
-
 #battery.good {
   color: #1a9848;
 }
@@ -186,9 +27,6 @@ window#waybar.empty {
   color: rgb(221, 0, 0);
 }
 
-#network {
-  padding-right: 8px;
-}
 #custom-media {
   font-size: 100%;
   font-family:
@@ -197,8 +35,6 @@ window#waybar.empty {
   color: @color10;
 }
 .modules-center {
-  padding-right: 15px;
-  padding-left: 15px;
   margin-left: 20px;
   color: @color0;
 }
@@ -207,13 +43,13 @@ window#waybar.empty {
 #memory,
 #disk,
 #custom-distro {
+  margin: 4px 0px;
   padding-left: 12px;
   padding-right: 12px;
 }
 
 #cpu {
   background-color: @color11;
-  border-radius: 20px 0px 0px 20px;
 }
 
 #temperature {
@@ -225,29 +61,27 @@ window#waybar.empty {
 }
 #disk {
   background-color: @color10;
-  border-radius: 0px 20px 20px 0px;
 }
 #custom-distro {
   background-color: @color12;
   padding-left: 16px;
   padding-right: 16px;
 }
+
 .modules-right .module {
-  margin: 0 6px;
+  margin: 0px 6px;
 }
 
 .modules-left .module {
-  margin: 0 6px;
+  margin: 0px 6px;
 }
 #temperature.critical {
   color: darkred;
 }
 
 #workspaces {
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 4px 0px;
   background: @color12;
-  border: none;
 }
 
 #workspaces button {
@@ -259,10 +93,9 @@ window#waybar.empty {
 }
 
 #custom-right.1{
-  margin-left: 1px;
-  margin-right: 0px;
+  margin: 4px 0px;
   color: @color12;
-  font-size: 27px;
+  font-size: 24px;
   background: @color11;
 }
 #custom-left.1{
@@ -271,14 +104,14 @@ window#waybar.empty {
   font-size: 27px;
 }
 #window{
-  margin: 0px;
+  margin: 4px 0px;
   color: @color0;
   padding-right: 4px;
   padding-left: 4px;
   background: @color11;
 }
 #custom-right.window{
-  margin: 0px;
+  margin: 4px 0px;
   font-size: 26px;
   color: @color11;
   background-color: @color10;
@@ -286,13 +119,21 @@ window#waybar.empty {
 #custom-media{
   padding-right: 4px;
   padding-left: 4px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 4px 0px;
   background-color: @color10;
   color: @color0
 }
 #custom-right.media{
-  margin-left: 0px;
+  margin: 2px 0px;
   font-size: 26px;
   color: @color10;
+}
+#custom-right.disk{
+  color: @color10;
+  font-size: 26px;
+}
+
+#custom-left.cpu{
+  color: @color11;
+  font-size: 26px;
 }
