@@ -9,7 +9,7 @@ window#waybar,
 window#waybar.empty,
 window#waybar.empty {
   color: @color6;
-  background-color: alpha(@color0, 0.8);
+  background-color: alpha(@color0, 0.6);
 }
 
 #battery.good {
@@ -148,7 +148,7 @@ window#waybar.empty {
 }
 #pulseaudio{
   color: @color0;
-  padding: 0px 10px;
+  padding: 0px 14px;
   background-color:@color10;
   margin: 4px 0px;
 }
@@ -157,7 +157,8 @@ window#waybar.empty {
   background-color:alpha(@color5, 0.3);
   margin: 4px 0px;
   color:@color10;
-  font-size: 26px;
+  font-size: 27px;
+  padding: 0px;
 }
 
 #custom-left.battery{

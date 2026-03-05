@@ -1,38 +1,50 @@
 {
   "custom/right#1": {
-    "format": ""
+    "format": "",
+    "tooltip": "false"
   },
   "custom/left#1": {
-    "format": ""
+    "format": "",
+    "tooltip": "false"
   },
   "custom/right#window": {
-    "format": ""
+    "format": "",
+    "tooltip": "false"
   },
   "custom/left#cpu": {
-    "format": ""
+    "format": "",
+    "tooltip": "false"
   },
   "custom/right#disk": {
-    "format": ""
+    "format": "",
+    "tooltip": "false"
   },
   "custom/right#media": {
-    "format": ""
+    "format": "",
+    "tooltip": "false"
   },
   "custom/left#tray": {
-    "format": ""
+    "format": "",
+    "tooltip": "false"
   },
   "custom/left#volume": {
-    "format": ""
+    "format": "",
+    "tooltip": "false"
   },
   "custom/left#battery": {
-    "format": ""
+    "format": "",
+    "tooltip": "false"
   },
   "custom/left#notification": {
-    "format": ""
+    "format": "",
+    "tooltip": "false"
   },
   "custom/left#calendar": {
-    "format": ""
+    "format": "",
+    "tooltip": "false"
   },
   "custom/right#calendar": {
-    "format": ""
+    "format": "",
+    "tooltip": "false"
   }
 }
