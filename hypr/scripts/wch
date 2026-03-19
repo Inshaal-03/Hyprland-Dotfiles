@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-dir="/home/inshaal/Wallpaper-Repository"
+dir="/home/inshaal/Pictures/Wallpaper"
 
 wallpaper=$(fd --full-path "$dir" --type f -x basename | rofi -i -dmenu -p "Select a wallpaper")
 

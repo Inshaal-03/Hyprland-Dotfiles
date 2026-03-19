@@ -11,7 +11,7 @@
   "layer": "top",
   "position": "top",
   "modules-left": [
-    "hyprland/workspaces#kanji",
+    "hyprland/workspaces#pacman",
     "custom/right#1",
     "hyprland/window",
     "custom/right#window",

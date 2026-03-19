@@ -24,7 +24,7 @@ PS1='[\u@\h \W]\$ '
 
 eval "$(zoxide init bash)"
 # eval "$(/bin/brew shellenv)"
-eval "$(oh-my-posh init bash --config /home/inshaal/.cache/oh-my-posh/themes/atomic.omp.json)"
-eval "$(tv init bash)"
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --bash)"
+export PATH=$PATH:/home/inshaal/.local/bin
+eval "$(oh-my-posh init bash --config ~/.cache/oh-my-posh/themes/half-life.omp.json)"
