@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
 
 dir="/home/inshaal/Pictures/Wallpaper"
+theme="/usr/share/rofi/themes/fullscreen-preview.rasi"
 
-wallpaper=$(fd --full-path "$dir" --type f -x basename | rofi -i -dmenu -p "Select a wallpaper")
+wallpaper=$(fd --full-path "$dir" --type f -x basename |
+  while read -r image; do
+    echo -en "$image\0icon\x1f$dir/$image\n";
+  done | rofi -theme "$theme" -show-icons -i -dmenu -p "Select a wallpaper")
 
 if [[ -z $wallpaper ]]; then # -z returns true if string is empty
   notify-send "Error" "No wallpaper has been selected."

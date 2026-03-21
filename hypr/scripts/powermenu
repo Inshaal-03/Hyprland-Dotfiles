@@ -1,22 +1,25 @@
 #!/usr/bin/env bash
 
-powermenu=(Shutdown Reboot Logout Hibernate Lock)
-option=$(echo "${powermenu[*]}" | rofi -dmenu -i -p "Select an option" -sep " " -l "${#powermenu[*]}")
+uptime=$(uptime -p | sed -e "s/up //g")
+
+shutdown="⏻ Shutdown"
+reboot=" Reboot"
+logout="󰍃 Logout"
+lock=" Lock"
+
+option=$(echo -e "$shutdown\n$reboot\n$logout\n$lock"| rofi -dmenu -theme-str "window {width: 550px;}" -i -p "Select Power Mode" -mesg "Uptime: $uptime" -l 4)
 
 case $option in
-  Shutdown)
+  "$shutdown")
     systemctl poweroff
     ;;
-  Reboot)
+  "$reboot")
     systemctl reboot
     ;;
-  Logout)
+  "$logout")
     hyprctl dispatch exit
     ;;
-  Hibernate)
-    swaylock -f && systemctl hibernate
-    ;;
-  Lock)
+  "$lock")
     hyprlock
     ;;
   *)

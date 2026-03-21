@@ -18,7 +18,6 @@ alias balanced="powerprofilesctl set balanced"
 alias power-saver="powerprofilesctl set power-saver"
 alias powerls="powerprofilesctl"
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
-alias fastfetch="fastfetch --logo arch"
 alias nvdir="nvim \$(fd -t d -E 'Games' | fzf --preview 'eza --icons --color=always --long --header {}')"
 PS1='[\u@\h \W]\$ '
 
