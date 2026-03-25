@@ -9,7 +9,6 @@ wallpaper=$(fd --full-path "$dir" --type f -x basename |
   done | rofi -theme "$theme" -show-icons -i -dmenu -p "Select a wallpaper")
 
 if [[ -z $wallpaper ]]; then # -z returns true if string is empty
-  notify-send "Error" "No wallpaper has been selected."
   exit 0
 else
   hyprctl hyprpaper wallpaper "eDP-1, $dir/$wallpaper"

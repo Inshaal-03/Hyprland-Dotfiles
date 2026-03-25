@@ -26,7 +26,6 @@
     "tray",
     "custom/left#volume",
     "pulseaudio",
-    "upower",
     "custom/left#battery",
     "battery",
     "custom/left#notification",
