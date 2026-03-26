@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+power_profile=$(powerprofilesctl get)
+
+if [[ $power_profile == "power-saver" ]]; then
+  notify-send "Gamemode" "Entering into performance mode"
+  powerprofilesctl set performance
+else
+  notify-send "Gamemode" "Entering into power-saver mode"
+  powerprofilesctl set power-saver
+fi
