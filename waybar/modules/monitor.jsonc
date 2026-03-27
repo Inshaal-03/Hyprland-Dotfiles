@@ -8,8 +8,8 @@
   },
   "disk": {
     "interval": 30,
-    "path": "/",
-    "format": "{percentage_used}% 󰋊",
+    "path": "/home/",
+    "format": "{used} 󰋊",
     "tooltip-format": "Click: Open Gnome Disks\nRight Click: Open Gnome Disk Usage Analyzer",
     "on-click": "gnome-disks",
     "on-click-right": "baobab /home/inshaal/"
@@ -22,11 +22,11 @@
     "tooltip": false
   },
   "temperature": {
-    "thermal-zone": 6,
+    "thermal-zone": 8,
     "interval": 10,
     "critical-threshold": 80,
     "format-critical": "{temperatureC}°C ",
     "tooltip": false,
     "format": "{temperatureC}°C "
-  },
+  }
 }
