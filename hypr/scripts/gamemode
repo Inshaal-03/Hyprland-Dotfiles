@@ -3,9 +3,9 @@
 power_profile=$(powerprofilesctl get)
 
 if [[ $power_profile == "power-saver" ]]; then
-  notify-send "Gamemode" "Entering into performance mode"
+  notify-send "Gamemode" --icon heroic "Entering into performance mode" --app-name "Heroic Games Launcher"
   powerprofilesctl set performance
 else
-  notify-send "Gamemode" "Entering into power-saver mode"
+  notify-send "Gamemode" --icon heroic "Entering into power-saver mode" --app-name "Heroic Games Launcher"
   powerprofilesctl set power-saver
 fi

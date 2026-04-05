@@ -3,7 +3,7 @@
 dir="/home/inshaal/Pictures/Wallpaper"
 theme="/usr/share/rofi/themes/fullscreen-preview.rasi"
 
-wallpaper=$(fd --full-path "$dir" --type f -x basename |
+wallpaper=$(ls "$dir" |
   while read -r image; do
     echo -en "$image\0icon\x1f$dir/$image\n";
   done | rofi -theme "$theme" -show-icons -i -dmenu -p "Select a wallpaper")
