@@ -7,14 +7,14 @@
 folder_path="$HOME/Pictures/Screenshots"
 
 # Selecting the screenshot mode. -l --> number of lines
-mode=$(echo "Entire Monitor|Certain Window|Selected Region" | rofi -sep "|" -dmenu -l 3 -p "Select Screenshot Mode")
+mode=$(echo "Entire Monitor|Certain Window|Selected Region" | rofi -sep "|" -dmenu -l 3 -p "󰹑 Screenshot Mode")
 # Exiting if the user does not select a mode.
 if [[ $mode == '' ]];then
   exit 0
 fi
 
 # Save to clipboard or disk
-clipboard=$(echo "Copy to clipboard|Save to disk" | rofi -sep "|" -dmenu -l 2 -p "Save to clipboard or disk")
+clipboard=$(echo " Copy to clipboard|󰋊 Save to disk" | rofi -sep "|" -dmenu -l 2 -p "Save to clipboard or disk")
 
 if [[ $mode == "Entire Monitor" ]]; then
   if [[ $clipboard == "Copy to clipboard" ]]; then

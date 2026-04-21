@@ -1,0 +1,7 @@
+{
+  "custom/fans": {
+    "format": "󰈐 {text}",
+    "return-type": "json",
+    "exec": ""
+  }
+}

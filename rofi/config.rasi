@@ -187,4 +187,8 @@ configuration {
 
 //@theme "/usr/share/rofi/themes/sidebar.rasi"
 
+//@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+
+//@theme "/usr/share/rofi/themes/sidebar.rasi"
+
 @theme "/usr/share/rofi/themes/Arc-Dark.rasi"

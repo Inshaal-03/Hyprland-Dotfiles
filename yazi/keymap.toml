@@ -10,6 +10,11 @@ run = "plugin smart-tab"
 desc = "Create a tab and enter the hovered directory"
 
 [[mgr.prepend_keymap]]
+on = [ "s", "i" ]
+run  = "plugin what-size"
+desc = "Calc size of selection or cwd" 
+
+[[mgr.prepend_keymap]]
 on = "<C-n>"
 run = "shell -- ripdrag %s -x 2>/dev/null &"
 

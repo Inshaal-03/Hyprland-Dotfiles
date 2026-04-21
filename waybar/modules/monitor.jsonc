@@ -9,7 +9,7 @@
   "disk": {
     "interval": 30,
     "path": "/home/",
-    "format": "{used} 󰋊",
+    "format": "{used} ",
     "tooltip-format": "Click: Open Gnome Disks\nRight Click: Open Gnome Disk Usage Analyzer",
     "on-click": "gnome-disks",
     "on-click-right": "baobab /home/inshaal/"

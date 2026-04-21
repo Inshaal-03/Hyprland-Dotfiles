@@ -19,7 +19,7 @@
     "custom/right#media"
   ],
   "modules-center": [
-    "group/mobo_drawer"
+    "group/mobo_drawer",
   ],
   "modules-right": [
     "custom/left#tray",
