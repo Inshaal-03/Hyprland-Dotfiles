@@ -7,7 +7,7 @@ configuration {
 	scroll-method: 0;
 	normalize-match: true;
 	show-icons: true;
-	icon-theme: "Everforest";
+	icon-theme: "Slot-Silvery-Dark";
 /*	cache-dir: ;*/
 	steal-focus: false;
 /*	dpi: -1;*/
@@ -43,7 +43,7 @@ configuration {
 	run-shell-command: "{terminal} -e {cmd}";
 
 	/*---------- Fallback Icon ----------*/
-	run,drun {
+	run,drun,window {
 		fallback-icon: "application-x-addon";
 	}
 
@@ -51,7 +51,7 @@ configuration {
 	window-match-fields: "title,class,role,name,desktop";
 	window-command: "wmctrl -i -R {window}";
 	window-format: "{w} - {c} - {t:0}";
-	window-thumbnail: false;
+	window-thumbnail: true;
 
 	/*---------- Combi settings ----------*/
 /*	combi-modi: "window,run";*/

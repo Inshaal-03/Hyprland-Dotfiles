@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-utils=(Nmtui Bluetui Wiremix Btop Nvtop Yazi Clipse)
+utils=(Nmtui Bluetui Wiremix Btop Nvtop Yazi Clipse Disk-Usage)
 
 util=$(echo "${utils[*]}" | rofi -dmenu -i -sep " " -p "Select which utility you want to open" -l "${#utils[*]}") # "${#utils[*]}" this gives us the length of an array
 
@@ -25,6 +25,9 @@ case "$util" in
     ;;
   Clipse)
     kitty --class clipse -e clipse
+    ;;
+  Disk-Usage)
+    kitty --class gdu -e gdu
     ;;
   *)
     exit 0
