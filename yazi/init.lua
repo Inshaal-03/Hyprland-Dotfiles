@@ -1,7 +1,7 @@
-require("full-border"):setup({
-	type = ui.Border.ROUNDED,
-})
-
+-- require("full-border"):setup({
+-- 	type = ui.Border.ROUNDED,
+-- })
+--
 Header:children_add(function()
 	if ya.target_family() ~= "unix" then
 		return ""
