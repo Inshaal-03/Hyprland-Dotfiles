@@ -94,6 +94,12 @@ hl.config({
 		},
 	},
 })
+
+hl.gesture({
+	fingers = 3,
+	direction = "horizontal",
+	action = "workspace",
+})
 -- Binds
 local mainMod = "SUPER"
 local scriptLocation = "~/Dotfiles/hypr/scripts/"
@@ -124,3 +130,113 @@ hl.bind("XF86AudioMute", hl.dsp.exec_cmd("swayosd-client --output-volume mute-to
 hl.bind("XF86AudioMicMute", hl.dsp.exec_cmd("swayosd-client --input-volume mute-toggle"))
 hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("swayosd-client --brightness +10"))
 hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("swayosd-client --brightness -10"))
+
+hl.window_rule({
+	name = "Rule for nwg-look",
+	match = {
+		class = "nwg-look",
+		title = "nwg-look",
+	},
+	float = 1,
+	center = 1,
+})
+
+hl.window_rule({
+	name = "Center Local Send App",
+	match = {
+		class = "localsend",
+	},
+	float = 1,
+	center = 1,
+	size = "1200 700",
+})
+
+hl.window_rule({
+	name = "Center Utilities",
+	match = {
+		class = "btop",
+	},
+	float = 1,
+	center = 1,
+	size = "1200 700",
+})
+
+hl.window_rule({
+	name = "Center Utilities",
+	match = {
+		class = "yazi",
+	},
+	float = 1,
+	center = 1,
+	size = "1200 700",
+})
+
+hl.window_rule({
+	name = "Center Utilities",
+	match = {
+		class = "nvtop",
+	},
+	float = 1,
+	center = 1,
+	size = "1200 700",
+})
+
+hl.window_rule({
+	name = "Center Utilities",
+	match = {
+		class = "wiremix",
+	},
+	float = 1,
+	center = 1,
+	size = "1200 700",
+})
+
+hl.window_rule({
+	name = "Center Utilities",
+	match = {
+		class = "bluetui",
+	},
+	float = 1,
+	center = 1,
+	size = "1200 700",
+})
+
+hl.window_rule({
+	name = "Center Utilities",
+	match = {
+		class = "nmtui",
+	},
+	float = 1,
+	center = 1,
+	size = "1200 700",
+})
+
+hl.window_rule({
+	name = "Center Utilities",
+	match = {
+		class = "clipse",
+	},
+	float = 1,
+	center = 1,
+	size = "1200 700",
+})
+
+hl.window_rule({
+	name = "Center Utilities",
+	match = {
+		class = "mmtui",
+	},
+	float = 1,
+	center = 1,
+	size = "1200 700",
+})
+
+hl.window_rule({
+	name = "Center Utilities",
+	match = {
+		class = "gdu",
+	},
+	float = 1,
+	center = 1,
+	size = "1200 700",
+})
