@@ -1,4 +1,4 @@
-local colors = require("hyprland-colors")
+local colors = dofile(os.getenv("HOME") .. "/.cache/wal/hyprland-colors.lua")
 -- Monitor
 hl.monitor({
 	output = "eDP-1",
@@ -105,9 +105,11 @@ local mainMod = "SUPER"
 local scriptLocation = "~/Dotfiles/hypr/scripts/"
 
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
-hl.bind(mainMod .. " + return", hl.dsp.exec_cmd("kitty"))
+hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd("kitty"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("dolphin"))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd("rofi -show drun"))
+hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
+hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" }))
 
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(scriptLocation .. "screenshot"))
 hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(scriptLocation .. "powermenu"))
