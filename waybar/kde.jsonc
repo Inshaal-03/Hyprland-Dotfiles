@@ -1,0 +1,51 @@
+{
+  "include": [
+    "~/Dotfiles/waybar/modules/*.jsonc"
+  ],
+  "reload_style_on_change": true,
+  "height": 22,
+  "margin-top": 0,
+  "margin-right": 0,
+  "margin-left": 0,
+  "margin-bottom": 0,
+  "layer": "top",
+  "position": "top",
+  "modules-left": [
+    "custom/workspace1",
+    "custom/workspace2",
+    "custom/workspace3",
+    "custom/media",
+    "custom/right#media"
+  ],
+  "modules-center": [
+    "group/mobo_drawer",
+  ],
+  "modules-right": [
+    "custom/left#tray",
+    "tray",
+    "custom/left#volume",
+    "pulseaudio",
+    "custom/left#battery",
+    "battery",
+    "custom/left#notification",
+    "custom/notification",
+    "custom/left#calendar",
+    "clock"
+  ],
+  "tray": {
+    "icon-size": 20,
+    "spacing": 10
+  },
+  "group/mobo_drawer": {
+    "orientation": "inherit",
+    "modules": [
+      "custom/left#cpu",
+      "cpu",
+      "temperature",
+      "custom/distro",
+      "memory",
+      "disk",
+      "custom/right#disk"
+    ]
+  }
+}

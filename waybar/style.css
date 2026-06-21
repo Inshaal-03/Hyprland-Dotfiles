@@ -195,3 +195,14 @@ window#waybar.empty {
   margin: 4px 0px;
   padding:0px 5px;
 }
+#custom-workspace1,
+#custom-workspace2,
+#custom-workspace3{
+  margin: 4px 4px;
+  background: @color12;
+  color: @color0;
+}
+#custom-workspace1:hover,
+#custom-workspace2:hover{
+  background: transparent;
+}

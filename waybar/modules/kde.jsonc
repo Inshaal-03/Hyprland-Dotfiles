@@ -1,0 +1,17 @@
+{
+  "custom/workspace1": {
+    "interval": 2,
+    "format": "1",
+    "on-click": "kdotool set_desktop 1",
+  },
+  "custom/workspace2": {
+    "interval": 2,
+    "format": "2",
+    "on-click": "kdotool set_desktop 2",
+  },
+  "custom/workspace3": {
+    "interval": 2,
+    "format": "3",
+    "on-click": "kdotool set_desktop 3",
+  },
+}

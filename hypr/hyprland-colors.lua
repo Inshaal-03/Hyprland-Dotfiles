@@ -1,0 +1,1 @@
+/home/inshaal/.cache/wal/hyprland-colors.lua
