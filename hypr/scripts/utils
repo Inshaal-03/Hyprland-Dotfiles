@@ -6,28 +6,28 @@ util=$(echo "${utils[*]}" | rofi -dmenu -i -sep " " -p "Select which utility you
 
 case "$util" in
   Nmtui)
-    kitty --class nmtui -e nmtui
+    kitty --class utils -e nmtui
     ;;
   Bluetui)
-    kitty --class bluetui -e bluetui
+    kitty --class utils -e bluetui
     ;;
   Wiremix)
-    kitty --class wiremix -e wiremix
+    kitty --class utils -e wiremix
     ;;
   Btop)
-    kitty --class btop -e btop
+    kitty --class utils -e btop
     ;;
   Nvtop)
-    kitty --class nvtop -e nvtop
+    kitty --class utils -e nvtop
     ;;
   Yazi)
-    kitty --class yazi -e yazi
+    kitty --class utils -e yazi
     ;;
   Clipse)
-    kitty --class clipse -e clipse
+    kitty --class utils -e clipse
     ;;
   Disk-Usage)
-    kitty --class gdu -e gdu
+    kitty --class utils -e gdu
     ;;
   *)
     exit 0

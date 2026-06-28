@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+echo -e "Which Location Do You Want to Store At (Just Enter a number)?\n1.)Partition-One\n2.)Toshiba-Hdd\n3.)Souls-Likes"
+
+read -r location_option
+
+game_location="/home/inshaal/Games"
+case "$location_option" in
+  1)
+    game_location="$game_location/Games-Partition/"
+    ;;
+  2)
+    game_location="$game_location/Toshiba-Hdd/"
+    ;;
+  3)
+    game_location="$game_location/Souls-Likes/"
+    ;;
+  *)
+    exit 0
+    ;;
+esac
+
+echo -e "-------------------------Extraction Process Beginning-------------------------"
+7z x "$1" -o/"$game_location" -bso0 -bsp1
+echo -e "-------------------------Extraction Process Ending----------------------------"

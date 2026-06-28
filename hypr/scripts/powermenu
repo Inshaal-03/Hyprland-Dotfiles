@@ -17,7 +17,7 @@ case $option in
     systemctl reboot
     ;;
   "$logout")
-    hyprctl dispatch exit
+    hyprshutdown
     ;;
   "$lock")
     hyprlock

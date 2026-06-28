@@ -17,6 +17,7 @@ end)
 hl.env("XCURSOR_SIZE", "32")
 hl.env("XCURSOR_THEME", "Bibata-Modern-Ice")
 hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
+hl.env("XDG_MENU_PREFIX", "arch-")
 -- Look and Feel Section
 hl.config({
 	general = {
@@ -109,6 +110,7 @@ hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd("kitty"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("dolphin"))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd("rofi -show drun"))
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
+hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" }))
 
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(scriptLocation .. "screenshot"))
@@ -156,89 +158,9 @@ hl.window_rule({
 hl.window_rule({
 	name = "Center Utilities",
 	match = {
-		class = "btop",
+		class = "utils",
 	},
 	float = 1,
 	center = 1,
-	size = "1200 700",
-})
-
-hl.window_rule({
-	name = "Center Utilities",
-	match = {
-		class = "yazi",
-	},
-	float = 1,
-	center = 1,
-	size = "1200 700",
-})
-
-hl.window_rule({
-	name = "Center Utilities",
-	match = {
-		class = "nvtop",
-	},
-	float = 1,
-	center = 1,
-	size = "1200 700",
-})
-
-hl.window_rule({
-	name = "Center Utilities",
-	match = {
-		class = "wiremix",
-	},
-	float = 1,
-	center = 1,
-	size = "1200 700",
-})
-
-hl.window_rule({
-	name = "Center Utilities",
-	match = {
-		class = "bluetui",
-	},
-	float = 1,
-	center = 1,
-	size = "1200 700",
-})
-
-hl.window_rule({
-	name = "Center Utilities",
-	match = {
-		class = "nmtui",
-	},
-	float = 1,
-	center = 1,
-	size = "1200 700",
-})
-
-hl.window_rule({
-	name = "Center Utilities",
-	match = {
-		class = "clipse",
-	},
-	float = 1,
-	center = 1,
-	size = "1200 700",
-})
-
-hl.window_rule({
-	name = "Center Utilities",
-	match = {
-		class = "mmtui",
-	},
-	float = 1,
-	center = 1,
-	size = "1200 700",
-})
-
-hl.window_rule({
-	name = "Center Utilities",
-	match = {
-		class = "gdu",
-	},
-	float = 1,
-	center = 1,
-	size = "1200 700",
+	size = "1000 700",
 })
