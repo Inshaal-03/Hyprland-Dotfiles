@@ -26,4 +26,3 @@ eval "$(zoxide init bash)"
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --bash)"
 export PATH=$PATH:/home/inshaal/.local/bin
-eval "$(oh-my-posh init bash --config ~/.cache/oh-my-posh/themes/half-life.omp.json)"

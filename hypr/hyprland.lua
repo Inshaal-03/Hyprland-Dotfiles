@@ -68,10 +68,10 @@ hl.curve("quick", { type = "bezier", points = { { 0.15, 0 }, { 0.1, 1 } } })
 hl.curve("easy", { type = "spring", mass = 1, stiffness = 71.2633, dampening = 15.8273644 })
 
 hl.animation({ leaf = "global", enabled = true, speed = 10, bezier = "default" })
-hl.animation({ leaf = "border", enabled = true, speed = 5.39, bezier = "easeOutQuint" })
+hl.animation({ leaf = "border", enabled = true, speed = 9.39, bezier = "easeOutQuint" })
 hl.animation({ leaf = "windows", enabled = true, speed = 4.79, spring = "easy" })
-hl.animation({ leaf = "windowsIn", enabled = true, speed = 4.1, spring = "easy", style = "popin 87%" })
-hl.animation({ leaf = "windowsOut", enabled = true, speed = 1.49, bezier = "linear", style = "popin 87%" })
+hl.animation({ leaf = "windowsIn", enabled = true, speed = 9.1, spring = "easy", style = "popin 87%" })
+hl.animation({ leaf = "windowsOut", enabled = true, speed = 9.49, bezier = "linear", style = "popin 87%" })
 hl.animation({ leaf = "fadeIn", enabled = true, speed = 1.73, bezier = "almostLinear" })
 hl.animation({ leaf = "fadeOut", enabled = true, speed = 1.46, bezier = "almostLinear" })
 hl.animation({ leaf = "fade", enabled = true, speed = 3.03, bezier = "quick" })
@@ -165,4 +165,44 @@ hl.window_rule({
 	float = 1,
 	center = 1,
 	size = "1000 700",
+})
+
+hl.window_rule({
+	name = "Centering qt-sudo",
+	match = {
+		class = "qt-sudo",
+	},
+	float = 1,
+	center = 1,
+	size = "900 700",
+})
+
+hl.window_rule({
+	name = "Hiding setup black screen",
+	match = {
+		title = "Setup",
+		class = "steam_app_default",
+	},
+	float = 1,
+	border_size = 0,
+	size = "1 1",
+})
+
+hl.window_rule({
+	name = "Opening Zen Browser on Workspace 1",
+	match = {
+		class = "zen",
+	},
+	workspace = 1,
+})
+
+hl.window_rule({
+	name = "No border for fitgirl setup screen",
+	match = {
+		title = "Select Setup Language",
+		class = "steam_app_default",
+	},
+	float = 1,
+	center = 1,
+	border_size = 0,
 })
