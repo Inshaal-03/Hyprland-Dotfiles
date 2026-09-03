@@ -206,3 +206,14 @@ hl.window_rule({
 	center = 1,
 	border_size = 0,
 })
+
+hl.window_rule({
+	name = "Center Only Office",
+	match = {
+		title = "Open Document",
+		class = "DesktopEditors",
+	},
+	float = 1,
+	center = 1,
+	size = "900 700",
+})

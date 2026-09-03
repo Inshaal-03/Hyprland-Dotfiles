@@ -27,7 +27,7 @@ case "$util" in
     kitty --class utils -e clipse
     ;;
   Disk-Usage)
-    kitty --class utils -e gdu
+    kitty --class utils -e dua i
     ;;
   *)
     exit 0

@@ -64,9 +64,9 @@ window#waybar.empty {
   padding-right: 16px;
 }
 
-.modules-right .module {
-  margin: 0px 6px;
-}
+/* .modules-right .module { */
+/*   margin: 0px 0px; */
+/* } */
 
 #temperature.critical {
   color: darkred;
