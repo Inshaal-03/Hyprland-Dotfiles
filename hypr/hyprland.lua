@@ -217,3 +217,13 @@ hl.window_rule({
 	center = 1,
 	size = "900 700",
 })
+
+hl.window_rule({
+	name = "Center brave dialog",
+	match = {
+		class = "xdg-desktop-portal-gtk",
+	},
+	float = 1,
+	center = 1,
+	size = "900 700",
+})
