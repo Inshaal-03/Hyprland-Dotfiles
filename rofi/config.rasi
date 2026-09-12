@@ -191,4 +191,10 @@ configuration {
 
 //@theme "/usr/share/rofi/themes/sidebar.rasi"
 
+//@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+
+//@theme "/usr/share/rofi/themes/android_notification.rasi"
+
+//@theme "/usr/share/rofi/themes/fancy2.rasi"
+
 @theme "/usr/share/rofi/themes/Arc-Dark.rasi"

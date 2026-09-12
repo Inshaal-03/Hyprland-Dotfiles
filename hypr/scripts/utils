@@ -1,33 +1,33 @@
 #!/usr/bin/env bash
+terminal=alacritty
+utils=(Nmtui,Bluetui,Wiremix,Btop,Nvtop,Yazi,Clipse,Disk-Usage)
 
-utils=(Nmtui Bluetui Wiremix Btop Nvtop Yazi Clipse Disk-Usage)
-
-util=$(echo "${utils[*]}" | rofi -theme-str "window {width: 550px;}" -dmenu -i -sep " " -p "Select which utility you want to open" -l "${#utils[*]}") # "${#utils[*]}" this gives us the length of an array
+util=$(echo "${utils[*]}" | rofi -theme-str "window {width: 550px; height:280px;}" -dmenu -i -sep "," -p "Select which utility you want to open" -l "${#utils[*]}") # "${#utils[*]}" this gives us the length of an array
 
 case "$util" in
   Nmtui)
-    kitty --class utils -e nmtui
+    $terminal --class "utils" -e env NEWT_COLORS='root=white,black;window=white,black;border=white,black;shadow=black,black;title=red,black;label=cyan,black;listbox=white,black;actlistbox=white,red;button=red,black;' nmtui
     ;;
   Bluetui)
-    kitty --class utils -e bluetui
+    $terminal --class "utils" -e bluetui
     ;;
   Wiremix)
-    kitty --class utils -e wiremix
+    $terminal --class "utils" -e wiremix
     ;;
   Btop)
-    kitty --class utils -e btop
+    $terminal --class "utils" -e btop
     ;;
   Nvtop)
-    kitty --class utils -e nvtop
+    $terminal --class "utils" -e nvtop
     ;;
   Yazi)
-    kitty --class utils -e yazi
+    wezterm start --class "utils" -e yazi
     ;;
   Clipse)
-    kitty --class utils -e clipse
+   $terminal --class "utils" -e clipse
     ;;
   Disk-Usage)
-    kitty --class utils -e dua i
+    $terminal --class "utils" -e dua i
     ;;
   *)
     exit 0
