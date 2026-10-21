@@ -6,7 +6,7 @@ util=$(echo "${utils[*]}" | rofi -theme-str "window {width: 550px; height:280px;
 
 case "$util" in
   Nmtui)
-    $terminal --class "utils" -e env NEWT_COLORS='root=white,black;window=white,black;border=white,black;shadow=black,black;title=red,black;label=cyan,black;listbox=white,black;actlistbox=white,red;button=red,black;' nmtui
+    $terminal --class "utils" -e nmtui
     ;;
   Bluetui)
     $terminal --class "utils" -e bluetui

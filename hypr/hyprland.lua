@@ -26,7 +26,7 @@ hl.config({
 		border_size = 3,
 		resize_on_border = false,
 		allow_tearing = false,
-		layout = "scrolling",
+		layout = "dwindle",
 		col = {
 			active_border = colors.color4,
 			inactive_border = colors.color3,
@@ -40,7 +40,7 @@ hl.config({
 		blur = {
 			enabled = true,
 			size = 8,
-			passes = 1,
+			passes = 4,
 		},
 
 		shadow = {
@@ -114,7 +114,7 @@ hl.bind(mainMod .. " + D", hl.dsp.exec_cmd("rofi -show drun"))
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" }))
-
+hl.bind(mainMod .. " +R", hl.dsp.window.resize())
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(scriptLocation .. "screenshot"))
 hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(scriptLocation .. "powermenu"))
 hl.bind(mainMod .. " + U", hl.dsp.exec_cmd(scriptLocation .. "utils"))
@@ -164,7 +164,7 @@ hl.window_rule({
 	},
 	float = 1,
 	center = 1,
-	size = "1000 700",
+	size = "900 700",
 })
 
 hl.window_rule({
@@ -186,14 +186,6 @@ hl.window_rule({
 	float = 1,
 	border_size = 0,
 	size = "1 1",
-})
-
-hl.window_rule({
-	name = "Opening Zen Browser on Workspace 1",
-	match = {
-		class = "zen",
-	},
-	workspace = 1,
 })
 
 hl.window_rule({
@@ -226,4 +218,27 @@ hl.window_rule({
 	float = 1,
 	center = 1,
 	size = "900 700",
+})
+
+hl.window_rule({
+	name = "Opening Zen Browser on Workspace 1",
+	match = {
+		class = "zen",
+	},
+	workspace = 1,
+})
+
+hl.window_rule({
+	name = "Opening Steam on Workspace 2",
+	match = {
+		class = "steam",
+	},
+	workspace = 2,
+})
+hl.window_rule({
+	name = "Opening Discord on Workspace 3",
+	match = {
+		class = "discord",
+	},
+	workspace = 3,
 })

@@ -13,6 +13,7 @@ if [[ -z $wallpaper ]]; then # -z returns true if string is empty
 else
   hyprctl hyprpaper wallpaper "eDP-1, $dir/$wallpaper"
   wal -i "$dir/$wallpaper"
+  hyprctl reload
   exit 0
 fi
 
